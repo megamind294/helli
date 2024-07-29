@@ -1091,10 +1091,6 @@ video {
   top: 8rem;
 }
 
-.left-\[\] {
-  left: ;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -1268,6 +1264,10 @@ video {
   margin-inline-end: 0.5rem;
 }
 
+.ml-\[\.5rem\] {
+  margin-left: .5rem;
+}
+
 .ml-\[2rem\] {
   margin-left: 2rem;
 }
@@ -1302,14 +1302,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-\[1rem\] {
-  margin-left: 1rem;
-}
-
-.ml-\[\.5rem\] {
-  margin-left: .5rem;
 }
 
 .box-border {
@@ -3351,10 +3343,6 @@ video {
   line-height: 1.25rem;
 }
 
-.text-\[3rem\] {
-  font-size: 3rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -3531,10 +3519,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .underline {
@@ -4441,11 +4425,6 @@ video {
     width: 1.5rem;
   }
 
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
   .sm\:text-\[0\.5rem\] {
     font-size: 0.5rem;
   }
@@ -4706,6 +4685,10 @@ video {
     top: 18rem;
   }
 
+  .xl\:top-\[26rem\] {
+    top: 26rem;
+  }
+
   .xl\:top-\[5rem\] {
     top: 5rem;
   }
@@ -4716,30 +4699,6 @@ video {
 
   .xl\:top-\[8rem\] {
     top: 8rem;
-  }
-
-  .xl\:top-\[\] {
-    top: ;
-  }
-
-  .xl\:top-\[1rem\] {
-    top: 1rem;
-  }
-
-  .xl\:top-\[22rem\] {
-    top: 22rem;
-  }
-
-  .xl\:top-\[24rem\] {
-    top: 24rem;
-  }
-
-  .xl\:top-\[26rem\] {
-    top: 26rem;
-  }
-
-  .xl\:top-\[30rem\] {
-    top: 30rem;
   }
 
   .xl\:m-\[0_0\.1rem_0\.5rem_0\] {
