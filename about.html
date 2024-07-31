@@ -15,127 +15,214 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>HELI E-commerce Website- About page</title>
   </head>
-  <body>
-    <div class="container bg-black">
-        <div
-          class="bg-[#131313] relative m-[0_0_0_0] flex flex-row justify-between p-[0.8rem_8.6rem_0.8rem_8.4rem] w-screen box-sizing-border"
-        >
-          <div class="flex flex-row box-sizing-border">
-            <form class="max-w-lg mx-auto">
-              <div class="flex">
-                <div class="relative w-full">
-                  <input
-                    type="search"
-                    id="search-dropdown"
-                    class="block p-2.5 w-full z-10 text-sm text-white bg-[#131313] rounded-full border-2 border-[#131313]"
-                    placeholder="Search"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white bg-transparent z-20 flex items-center justify-center"
+  <body class="overflow-x-hidden  xl:top-[0rem]  relative top-[-5rem]">
+    <div class="container  xl:visible bg-black invisible ">
+      <div
+        class="bg-[#131313] relative m-[0_0_0_0] flex flex-row justify-between xl:p-[0.8rem_8.6rem_0.8rem_8.4rem] w-screen box-sizing-border"
+      >
+        <div class="flex flex-row box-sizing-border">
+          <form class="max-w-lg mx-auto">
+            <div class="flex">
+              <div class="relative w-full">
+                <input
+                  type="search"
+                  id="search-dropdown"
+                  class="block p-2.5 w-full z-10 text-sm text-white bg-[#131313] rounded-full border-2 border-[#131313]"
+                  placeholder="Search"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white bg-transparent z-20 flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
                   >
-                    <svg
-                      class="w-4 h-4"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                      />
-                    </svg>
-                    <span class="sr-only">Search</span>
-                  </button>
-                </div>
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
+                  <span class="sr-only">Search</span>
+                </button>
               </div>
-            </form>
-          </div>
-  
-          <div
-            class="m-[0.6rem_0_0.7rem_0] inline-block break-words font-['Airbone'] font-light xl:text-[1rem] sm:text-[0.5rem] text-[#000]"
-          >
-            HOLIDAY SALE | 40% off select items + Free Domestic Expedited Shipping
-          </div>
-          <div class="m-[0.6rem_0_0.6rem_0] flex flex-row box-sizing-border">
-            <div class="m-[0.1rem_0rem_0_0] flex box-sizing-border">
-              <span
-                class="break-words font-['Satoshi'] font-light xl:text-[1rem] sm:text-[0.5rem] text-[#000000]"
-              >
-                Indian Rupees (INR)
-              </span>
             </div>
-            <div class="flex w-[1.3rem] h-[1.3rem] box-sizing-border">
-              <img
-                class="w-[1.3rem] h-[1.3rem]"
-                src="../assets/vectors/mask_group_21_x2.svg"
-              />
-            </div>
+          </form>
+        </div>
+
+        <div
+          class="m-[0.6rem_0_0.7rem_0] inline-block break-words font-['Airbone'] font-light xl:text-[1rem] text-[0.7rem] text-[#FFFFFF]  "
+        >
+          HOLIDAY SALE | 40% off select items + Free Domestic Expedited Shipping
+        </div>
+        <div class="m-[0.6rem_0_0.6rem_0] flex flex-row box-sizing-border">
+          <div class="m-[0.1rem_0rem_0_0] flex box-sizing-border">
+            <span
+              class="break-words font-['Satoshi'] font-light xl:text-[1rem] sm:text-[0.5rem] text-[#FFFFFF]"
+            >
+              Indian Rupees (INR)
+            </span>
+          </div>
+          <div class="flex w-[1.3rem] h-[1.3rem] box-sizing-border">
+            <img
+              class="w-[1.3rem] h-[1.3rem]"
+              src="../assets/vectors/mask_group_21_x2.svg"
+            />
           </div>
         </div>
       </div>
+    </div>
   
-      <header class="">
-        <nav
-          class=" backdrop-brightness-25 bg-[url('../assets/images/group1.png')]  bg-[0%_10%] bg-cover bg-no-repeat h-[35rem]  w-full z-20 top-[5rem] left-0 border-b border-gray-200 dark:border-gray-600"
-        >
-          <ul
-            class="navigation max-w-[90vw] flex flex-wrap justify-evenly items-center mx-auto relative bottom-[40px]"
-          >
-            <span
-              class=" relative top-[2rem] menu flex text-white font-['Satoshi'] font-medium [&>li]:pl-7 [&>li>a]:text-center [&>li>a]:relative [&>li>a]:transition [&>li>a]:duration-200 [&>li>a]:ease-in-out [&>li>a]:font-medium [&>li>a]:text-lg"
-            >
-              <li><a href="arrival.html">New In</a></li>
-              <li><a href="#">Sale</a></li>
-              <li><a href="#">Lookbooks</a></li>
-              <li><a href="#">Blogs</a></li>
-            </span>
-            <a class="logo invert relative top-[2.6rem]" href="#">
-              <img class="" src="../assets/images/heli_br.png" alt="logo" />
-            </a>
-            <input type="checkbox" id="check" />
-  
-            <span
-              class=" relative top-[2rem] menu flex text-white font-['Satoshi'] font-medium [&>li]:pl-7 [&>li>a]:text-center [&>li>a]:relative [&>li>a]:transition [&>li>a]:duration-200 [&>li>a]:ease-in-out [&>li>a]:font-medium [&>li>a]:text-lg"
-            >
-              <li><a href="#">Ethics</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Account</a></li>
-              <li><a href="#">Cart</a></li>
-  
-              <label for="check" class="close-menu">X</label>
-            </span>
-  
-            <label for="check" class="open-menu">Menu</label>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:mt-[2rem]">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="../assets/images/heli_br.png" class=" h-14 relative ml-[2rem] " alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+        </a>
+        <button data-collapse-toggle="navbar-multi-level" type="button" class=" relative right-5 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="helli.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+            </li>
+            <!-- <li>
+                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+      </svg></button>
+                
+                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                      </li>
+                      <li aria-labelledby="dropdownNavbarLink">
+                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+      </svg></button>
+                        <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My downloads</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
+                              </li>
+                              <li>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Rewards</a>
+                              </li>
+                            </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                      </li>
+                    </ul>
+                    <div class="py-1">
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                    </div>
+                </div>
+            </li> -->
+            <li>
+              <a href="about.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            </li>
+            <li>
+              <a href="collections.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">New Collections</a>
+            </li>
+            <li>
+              <a href="arrival.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Shop</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blogs</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Lookbooks</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ethics</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Account</a>
+            </li>
           </ul>
-          <div class="flex justify-center items-center">
-            <div
-              class=" text-[4.5rem] relative  left-[0rem] top-[3rem] m-[-1rem_0.1rem_0.5rem_0] inline-block break-words font-['Satoshi'] font-semibold  text-[#fff] "
-            >
-              About Us
+        </div>
+      </div>
+    </nav>
+    
+        <div class="max-w-2xl mx-auto">
+    
+          <div id="default-carousel" class="relative" data-carousel="static">
+             
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:w-[100rem] 2xl:h-[45rem] 2xl:right-[30rem] md:right-[0rem] ">
+                   
+                    <div class="hidden duration-700 ease-in-out z-0" data-carousel-item>
+                        <span class="absolute top-1/2 left-1/2 xl:text-[3rem] xl:top-[26rem]  font-semibold text-white -translate-x-1/2 -translate-y-1/2 text-3xl ml-[.5rem] z-30">About Us</span>
+                        
+                        
+                        <img src="../assets/images/c1.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 rounded-lg z-0" alt="...">
+                        
+                    </div>
+                   
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../assets/images/c2.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 rounded-lg" alt="...">
+                    </div>
+                   
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../assets/images/c3.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 rounded-lg" alt="...">
+                    </div>
+                </div>
+                
+                
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                </div>
+               
+                <button type="button" class="flex absolute  top-0 left-5  z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        <span class="hidden">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="flex absolute  top-0 right-7  z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <span class="hidden">Next</span>
+                    </span>
+                </button>
             </div>
-  
-          </div>
-        </nav>
-      </header>
+        
+          
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
       <section>
-        <div class=" relative top-[6rem] justify-center flex flex-row gap-[0_1.4rem] w-full box-sizing-border pb-4">
+        <div class=" relative top-[6rem] justify-center xl:flex xl:flex-row gap-[0_1.4rem] w-full box-sizing-border pb-4 block">
             <div class="text-black relative left-[5rem]">
-                <p class=" relative left-[4.1rem] font-semibold text-[1.5rem] underline ">OUR STORY</p>
-                <p class=" relative left-[4rem] font-semibold text-[3.8rem]">THE ESSENCE OF HELI</p>
-                <p class="relative w-[60%] left-[4.5rem] top-[2rem] leading-loose">
+                <p class="  xl:left-[4.1rem] font-semibold text-[1.5rem]  underline xl:top-[0rem] relative top-[-4rem] right-[3rem] md:right-[2rem]">OUR STORY</p>
+                <p class="  xl:left-[4rem] font-semibold xl:text-[3.8rem] xl:top-[0rem] relative text-[1.7rem] top-[-3rem]  w-[30rem] right-[3rem] md:right-[2rem]">THE ESSENCE OF HELI</p>
+                <p class="relative xl:w-[60%] xl:left-[4.5rem] xl:top-[2rem] leading-loose bottom-[2rem] right-[3rem] w-[80%] md:right-[1.8rem]">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
                 </p>
-                <p class="relative w-[60%] left-[4.5rem] top-[4rem] leading-loose">
+                <p class="relative xl:w-[60%] xl:left-[4.5rem] xl:top-[4rem] leading-loose bottom-[1rem] right-[3rem] w-[80%] md:right-[1.8rem]">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -145,31 +232,31 @@
                 </p>
             </div>
             <div class="text-black relative left-[5rem]">
-                <p class="relative w-[80%] right-[8.5rem] top-[2rem] leading-loose">
+                <p class="relative w-[80%] xl:right-[8.5rem] top-[2rem] leading-loose right-[3rem] md:right-[1.8rem]">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     It has survived not only five centuries, but also the leap into electronic typesetting, 
                     remaining essentially unchanged.
                 </p>
-                <img src="../assets/images/rectangle47.png" alt="" class="w-[80%] relative top-[3rem] right-[8rem]">
+                <img src="../assets/images/rectangle47.png" alt="" class="w-[80%] relative  xl:right-[8rem] top-[3rem] right-[3rem] md:right-[2rem]">
             </div>
         </div>
       </section>
       <section class=" relative ">
         <button
               type="button"
-              class=" top-[12rem] relative left-[40rem] text-black  border-gray-900 hover:text-white border border-\[3rem_solid_\#000\] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-semibold text-sm md:text-md px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 style"
+              class=" top-[12rem] relative xl:left-[40rem] text-black left-[40rem] border-gray-900 hover:text-white border border-\[3rem_solid_\#000\] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-semibold text-sm md:text-md px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 md:left-[20rem]"
             >
               More About Us
          </button>
       </section>
-      <section class=" bg-black relative top-[14rem] w-full h-[40rem]">
-        <div class=" relative top-[6rem] justify-center flex flex-row gap-[0_1.4rem] w-full box-sizing-border pb-4">
-          <div class="text-white relative left-[5rem]">
-            <p class=" relative left-[4.1rem] font-semibold text-[1.5rem] underline ">OUR CRAFTS</p>
-            <p class=" relative left-[3rem] font-semibold text-[2.8rem] top-[1rem]">INDIAN TRADFITIONAL</p>
-            <p class="relative w-[50%] left-[4.5rem] top-[2rem] leading-loose">
+      <section class=" bg-black relative xl:top-[14rem] w-full h-[40rem] top-[10rem] md:top-[14rem]">
+        <div class=" relative xl:top-[6rem] justify-center xl:flex xl:flex-row gap-[0_1.4rem] w-full box-sizing-border pb-4 block top-[2rem]">
+          <div class="text-white relative xl:left-[5rem] left-[3rem]">
+            <p class=" relative left-[4.1rem] font-semibold  text-[1.5rem] underline ">OUR CRAFTS</p>
+            <p class=" relative xl:left-[4rem] font-semibold xl:text-[2.8rem] top-[1rem] text-[2rem] left-[-1rem] md:left-[4rem]">INDIAN TRADITIONAL</p>
+            <p class="relative xl:w-[50%] xl:left-[4.5rem] top-[2rem] leading-loose w-[70%] left-[1rem] md:left-[4rem]">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -177,24 +264,24 @@
                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
             </p>
         </div>
-        <div class=" relative right-[6rem]">
+        <div class="  xl:right-[6rem] xl:top-[0rem] relative left-[8rem] top-[5rem] md:left-[12rem]">
           <img src="../assets/images/group84.png" alt="" class="w-[80%] relative top-[0rem] right-[6rem]">
           
       </div>
         </div>
       </section>
-      <section class=" bg-white relative top-[20rem]">
-            <div class="text-black relative left-[34rem]">
-              <p class="relative font-semibold text-[1.5rem] underline left-[8rem] ">OUR BRAND</p>
-              <p class="relative font-semibold text-[2.5rem] top-[1rem] ">WHAT WE STAND FOR</p>
+      <section class=" bg-white relative xl:top-[20rem] top-[34rem]">
+            <div class="text-black xl:left-[34rem] relative left-[4rem]">
+              <p class="relative font-semibold text-[1.5rem] underline xl:left-[8rem] left-[4rem] md:left-[16rem]">OUR BRAND</p>
+              <p class="relative font-semibold xl:text-[2.5rem] xl:left-[0rem] top-[1rem] text-[2rem] left-[-2.4rem] md:left-[9rem]">WHAT WE STAND FOR</p>
             </div>
-            <div class=" relative top-[4rem] justify-center flex flex-row gap-[0_1.4rem] w-full box-sizing-border pb-4">
-              <div class=" relative left-[18rem]">
-              <img src="../assets/images/group90.png" alt="" class="w-[80%] relative top-[0rem] right-[6rem]">
+            <div class=" relative top-[4rem] justify-center xl:flex xl:flex-row gap-[0_1.4rem] w-full box-sizing-border pb-4">
+              <div class=" relative xl:left-[18rem] left-[10rem] md:left-[14rem]">
+              <img src="../assets/images/group90.png" alt="" class="xl:w-[80%] relative top-[0rem] right-[6rem] w-[70%]">
               </div>
-              <div class="text-black relative left-[8rem]">
-                <p class=" relative left-[3rem] font-semibold text-[2.8rem] top-[1rem]">THE VISION</p>
-                <p class="relative w-[50%] left-[4.5rem] top-[2rem] leading-loose">
+              <div class="text-black relative xl:left-[8rem] left-[6rem]">
+                <p class=" relative xl:left-[3rem] font-semibold xl:text-[2.8rem] top-[1rem] text-[2.2rem] left-[1rem]">THE VISION</p>
+                <p class="relative xl:w-[50%] xl:left-[4.5rem] top-[2rem] leading-loose w-[80%] left-[-3rem] md:left-[2rem]">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -204,152 +291,97 @@
               </div>
             </div>
       </section>
-      <section class="bg-gray-100 relative top-[28rem] h-[56rem]">
-        <div class="text-black relative left-[38rem]">
-          <p class="relative font-semibold text-[1.5rem] underline left-[8rem] top-[2rem] ">OUR SIGNATURE</p>
-          <p class="relative font-semibold text-[2.5rem] top-[1rem] top-[2rem] ">FEATURED PRODUCTS</p>
+      <section class="bg-gray-100 relative xl:top-[28rem] h-[46rem] top-[42rem]">
+        <div class="text-black xl:left-[38rem] relative left-[8rem]">
+          <p class="relative font-semibold text-[1.5rem] underline xl:left-[8rem] top-[2rem] left-[0rem] ">OUR SIGNATURE</p>
+          <p class="relative font-semibold xl:text-[2.5rem] top-[1rem] xl:left-[0rem] top-[2rem] text-[1.8rem] left-[-4rem]">FEATURED PRODUCTS</p>
         </div>
-        <div
-        class="flex justify-center flex-row gap-[0_1.4rem] w-full box-sizing-border  relative  left-[3rem] top-[4rem]  pb-4"
-      >
-        <div
-          class="bg-[url('../assets/images/rectangle_10.jpeg')] bg-[10%_50%] bg-cover bg-no-repeat relative flex p-[23.6rem_0.1rem_3.6rem_0] w-[20rem] box-sizing-border"
-        >
-            <div class=" relative top-[28rem] flex p-[1rem_1rem_1rem_1rem] w-[25.7rem] box-sizing-border"></div>
-                <button
-                type="button"
-                class=" relative right-[0rem] bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                  >XXL</button>
-                <button
-              type="button"
-              class=" relative relative relative right-[1rem] text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >XL</button>
-                <button
-            type="button"
-            class=" text-black relative right-[1.5rem] bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >L</button>
-                <button
-          type="button"
-          class="relative right-[2rem] text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >M</button>
-                <button
-        type="button"
-        class="relative right-[2.5rem] text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >S</button>
-            
-        </div>
-        <div
-          class="bg-[url('../assets/images/rectangle_38.jpeg')] bg-[30%_50%] bg-cover bg-no-repeat relative flex p-[23.6rem_0.1rem_3.6rem_0] w-[20rem] box-sizing-border"
-        >
-            <div class=" relative top-[28rem] flex p-[1rem_1rem_1rem_1rem] w-[25.7rem] box-sizing-border"></div>
-                <button
-                type="button"
-                class=" relative right-[0rem] bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                  >XXL</button>
-                <button
-              type="button"
-              class=" relative relative relative right-[1rem] text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >XL</button>
-                <button
-            type="button"
-            class=" text-black relative right-[1.5rem] bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >L</button>
-                <button
-          type="button"
-          class="relative right-[2rem] text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >M</button>
-                <button
-        type="button"
-        class="relative right-[2.5rem] text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >S</button>
-            
-        </div>
-        <div
-          class="bg-[url('../assets/images/rectangle_43.png')] bg-[10%_50%] bg-cover bg-no-repeat relative flex p-[23.6rem_0.1rem_3.6rem_0] w-[20rem] border border-beige-600 box-sizing-border"
-        >
-            <div class=" relative top-[28rem] flex p-[1rem_1rem_1rem_1rem] w-[25.7rem] box-sizing-border"></div>
-                <button
-                type="button"
-                class=" relative right-[0rem] bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                  >XXL</button>
-                <button
-              type="button"
-              class=" relative relative relative right-[1rem] text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >XL</button>
-                <button
-            type="button"
-            class=" text-black relative right-[1.5rem] bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >L</button>
-                <button
-          type="button"
-          class="relative right-[2rem] text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >M</button>
-                <button
-        type="button"
-        class="relative right-[2.5rem] text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-5 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
-                >S</button>
-            
-        </div>
-      </div>
     </section>
-    <section class="flex justify-center flex-row gap-[0_6rem] relative left-[3rem] top-[16rem]">
-      <div >
-          <p class="font-semibold text-[1.5rem]">Men Solid Denim Jacket</p><br/>
-          <p class="font-semibold text-[1.5rem] relative bottom-[1rem]"> <span class="text-black">₹2,014  </span><span class="line-through text-gray-400">     ₹3,799</span><span class="text-green-600">     46% off</span></p>
-      </div>
-      <div >
-        <p class="font-semibold text-[1.5rem]">Men Solid Denim Jacket</p><br/>
-        <p class="font-semibold text-[1.5rem] relative bottom-[1rem]"> <span class="text-black">₹2,014  </span><span class="line-through text-gray-400">     ₹3,799</span><span class="text-green-600">     46% off</span></p>
-    </div>
-    <div >
-      <p class="font-semibold text-[1.5rem]">Men Solid Denim Jacket</p><br/>
-      <p class="font-semibold text-[1.5rem] relative bottom-[1rem]"> <span class="text-black">₹2,014  </span><span class="line-through text-gray-400">     ₹3,799</span><span class="text-green-600">     46% off</span></p>
-  </div>
+    <section>
+      <div class="flex  items-center justify-center bg-transparent relative xl:top-[-6rem] xl:left-[2rem] left-[0rem] top-[4rem]">
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 relative ">
+          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-72">
+              <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="../assets/images/c4.jpeg" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">Beauty</h1>
+              <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+              <button class="rounded-full bg-white py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60">Explore</button>
+            </div>
+          </div>
+          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-72">
+              <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="../assets/images/c5.png" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">Beyond Builder</h1>
+              <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+              <button class="rounded-full bg-white py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60">Explore</button>
+            </div>
+          </div>
+          <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-72">
+              <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="../assets/images/rectangle_48.png" alt="" />
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+            <div class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+              <h1 class="font-dmserif text-3xl font-bold text-white">Shooting Star</h1>
+              <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+              <button class="rounded-full bg-white py-2 px-3.5 font-com text-sm capitalize text-black shadow shadow-black/60">Explore</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>  
     </section>
+    
     <section class="relative  ">
       <button
                 type="button"
-                class=" top-[18rem] relative left-[46rem]  text-black  border-gray-900 hover:text-white border border-\[3rem_solid_\#000\] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-semibold text-sm md:text-md px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 style"
+                class=" bottom-[4rem] relative left-[46rem]  text-black  border-gray-900 hover:text-white border border-\[3rem_solid_\#000\] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-semibold text-sm md:text-md px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 md:left-[30rem] md:bottom-[6rem]"
               >
                 View All Products
            </button>
     </section>
-    <section class="top-[22rem] relative">
+    <section class="top-[12rem]  mb-[1rem] relative">
 
       <div
-        class="flex justify-center flex-row gap-[0_1.4rem] w-full box-sizing-border pb-4 ">
+        class="xl:flex justify-center flex-row gap-[0_1.4rem] w-full xl:left-[0rem] box-sizing-border left-[0rem] pb-4 block md:flex md:left-[1rem]">
         <div
-          class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border w-[30%] h-[40vh]">
-          <div class="bg-black relative bottom-[2rem] left-[6rem] w-[40%] rounded-full ">
-            <img src="../assets/images/package_1.png" class="w-[100%] relative  invert p-[1rem_1rem_1rem_1rem]  ">
+          class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh] w-[100%] md:p-[3rem_3rem_3rem_3rem]">
+          <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[40%] md:left-[1rem] md:w-[80%] left-[4rem] ">
+            <img src="../assets/images/package_1.png" class="xl:w-[100%] relative w-[100%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%] ">
           </div>
-          <span class="text-[2rem] font-medium font-['Satoshi'] relative left-[7.5rem] top-[-1rem]">FAST</span><br/>
-          <span class="text-[2rem] font-medium font-['Satoshi'] relative left-[0.5rem] top-[-1rem]">GLOBAL SHIPPING</span>
+          <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[7.5rem] left-[4rem] top-[-1rem] md:left-[2.5rem]">FAST</span><br/>
+          <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[0.5rem]  left-[.5rem] top-[-1rem] w-full md:left-[2rem] text-[1.5rem]">GLOBAL SHIPPING</span>
             
         </div>
         <div
-          class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border w-[30%] h-[40vh]">
-          <div class="bg-black relative bottom-[2rem] left-[6rem] w-[40%] rounded-full ">
-            <img src="../assets/images/package_12.png" class="w-[100%] relative  invert p-[1rem_1rem_1rem_1rem]  ">
+          class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh]  w-[100%] md:p-[3rem_3rem_3rem_3rem]">
+          <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[40%] md:left-[1rem] md:w-[80%] left-[4rem]">
+            <img src="../assets/images/package_12.png" class="xl:w-[100%] relative w-[100%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%]">
           </div>
-          <span class="text-[2rem] font-medium font-['Satoshi'] relative left-[5.5rem] top-[-1rem]">30 DAYS</span><br/>
-          <span class="text-[2rem] font-medium font-['Satoshi'] relative left-[1.5rem] top-[-1rem]">RETURN POLICY</span>
+          <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[5.5rem] left-[3rem] top-[-1rem] md:left-[1.5rem]">30 DAYS</span><br/>
+          <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[1.5rem] left-[1.2rem] top-[-1rem] w-full md:left-[1.6rem] text-[1.5rem]">RETURN POLICY</span>
             
         </div>
         <div
-          class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border w-[30%] h-[40vh]">
-          <div class="bg-black relative bottom-[2rem] left-[6rem] w-[40%] rounded-full ">
-            <img src="../assets/images/package_11.png" class="w-[100%] relative  invert p-[1rem_1rem_1rem_1rem]  ">
+          class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh] w-[100%] md:p-[3rem_3rem_3rem_3rem]">
+          <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[40%] md:left-[1rem] md:w-[80%] left-[4rem]">
+            <img src="../assets/images/package_11.png" class="xl:w-[100%] relative w-[100%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%]">
           </div>
-          <span class="text-[2rem] font-medium font-['Satoshi'] relative left-[7.5rem] top-[-1rem]">100%</span><br/>
-          <span class="text-[2rem] font-medium font-['Satoshi'] relative left-[0.5rem] top-[-1rem]">SECURE PAYMENTS</span>
+          <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[7.5rem] left-[4.5rem] top-[-1rem] md:left-[2.5rem]">100%</span><br/>
+          <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[0.5rem] left-[.5rem] top-[-1rem] w-full md:left-[2rem] text-[1.4rem]">SECURE PAYMENTS</span>
             
         </div>
       </div>
     </section>
-    <section class="top-[18rem] relative">
-      <div class="flex justify-center flex-row gap-[0_1.4rem] w-full box-sizing-border relative top-[7rem] border-t-2 border-gray-200 pb-4 ">
-          <div class="right-[10rem] relative top-[7rem] " >
+    <section>
+      <div class="xl:flex justify-center flex-row gap-[0_1.4rem] w-full box-sizing-border relative top-[12rem] border-t-2 border-gray-200 pb-4 block">
+          <div class="xl:left-[-5rem] relative top-[7rem] left-[5rem] " >
             <ul class="list-none gap-[0_1.4rem] ">
               <li class="font-semibold underline text-[#000] text-[1.8rem]">Company</li>
               <li class="text-[1.2rem]">Contact Us</li>
@@ -359,7 +391,7 @@
               <li class="text-[1.2rem]">Sustainability</li>
             </ul>
           </div>
-          <div class="right-[5rem] relative top-[7rem] " >
+          <div class="xl:left-[0rem] relative top-[7rem] left-[5rem]" >
             <ul class="list-none gap-[0_1.4rem] ">
               <li class="font-semibold underline text-[#000] text-[1.8rem]">Get Help</li>
               <li class="text-[1.2rem]">FAQ</li>
@@ -368,7 +400,7 @@
               <li class="text-[1.2rem]">Shipping Info</li>
             </ul>
           </div>
-          <div class="right-[1rem] relative top-[7rem] " >
+          <div class="xl:right-[1rem] relative top-[7rem] left-[5rem] " >
             <ul class="list-none gap-[0_1.4rem] ">
               <li class="font-semibold underline text-[#000] text-[1.8rem]">Account</li>
               <li class="text-[1.2rem]">Log in</li>
@@ -376,11 +408,11 @@
               <li class="text-[1.2rem]">Gift Card</li>
             </ul>
           </div>
-          <div class="relative top-[7rem] left-[15rem] font-normal font-['Satoshi'] text-[1.8rem] w-[40%]">
+          <div class="relative xl:top-[7rem] xl:left-[15rem] font-normal font-['Satoshi'] xl:text-[1.8rem] xl:w-[40%] text-[1.4rem] w-[80%] left-[5rem] top-[8rem]">
             <span>Sign up to receive 10% off your first order <br/>& exclusive product launches, and unique experiences.</span>
-            <form action="#" class=" flex relative m-[1rem_5rem_0_0] border  border-gray-900">
-              <input type="text" placeholder="Enter Your Email" class=" p-[1rem_5rem_1rem_1rem] ">
-              <button class="bg-black text-[#fff] text-[1.5rem] p-[1rem_3rem_1rem_3rem] relative right-[4.4rem]">Submit</button>
+            <form action="#" class=" flex relative xl:m-[1rem_5rem_0_0] border  border-gray-900 m-[2rem_8rem_0_0]">
+              <input type="text" placeholder="Enter Your Email" class=" xl:p-[1rem_5rem_1rem_1rem] p-[1rem_3rem_1rem_1rem] ">
+              <button class="bg-black text-[#fff] text-[1.5rem] xl:p-[1rem_3rem_1rem_3rem]  xl:right-[3.4rem] relative right-[10rem] p-[1rem_1rem_1rem_1rem] md:right-[-3rem]">Submit</button>
              </form>
              <div class="flex right-[4rem] relative top-[5rem] ">
                     <div class="bg-transparent relative bottom-[2rem] left-[6rem] ">
@@ -397,9 +429,9 @@
           </div>
       </div>
     </section>
-    <section class="top-[22rem] relative">
-      <h1 class=" relative font-semibold text-[34rem] font-['Satoshi'] top-[8rem] left-[5rem]">HELI</h1>
-      <p class="font-medium text-[1.5rem] font-['Satoshi'] relative bottom-[4rem] left-[17rem]">&copy; Copyright <strong>2024</strong>HELI, All rights reserved. Designed By <STRong>AHAAN SOFTWARE CONSULTING</STRong> </p>
+    <section>
+      <h1 class=" relative font-semibold xl:text-[34rem] font-['Satoshi'] xl:top-[8rem] left-[2rem] text-[8rem] top-[22rem] md:left-[10rem]">HELI</h1>
+      <p class="xl:w-full font-medium xl:text-[1.5rem] font-['Satoshi'] relative xl:bottom-[4rem] xl:left-[17rem] xl:top-[0rem]  top-[20rem] left-[3rem] text-[1rem] w-[80%]">&copy; Copyright <strong>2024</strong>HELI, All rights reserved. Designed By <STRong>AHAAN SOFTWARE CONSULTING</STRong> </p>
     </section>
   </body>
   </html>
