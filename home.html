@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.1.8/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./helli.css" />
+    <!-- icon -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css"/>
+     
+    <title>HELI E-commerce Website- Home page</title>
+  </head>
+  <body class="overflow-x-hidden  xl:top-[0rem]  relative top-[-5rem]" >
+    
+    <div class="container  xl:visible bg-black invisible ">
+      <div
+        class="bg-[#131313] relative m-[0_0_0_0] flex flex-row justify-between xl:p-[0.8rem_8.6rem_0.8rem_8.4rem] w-screen box-sizing-border"
+      >
+        <div class="flex flex-row box-sizing-border">
+          <form class="max-w-lg mx-auto">
+            <div class="flex">
+              <div class="relative w-full">
+                <input
+                  type="search"
+                  id="search-dropdown"
+                  class="block p-2.5 w-full z-10 text-sm text-white bg-[#131313] rounded-full border-2 border-[#131313]"
+                  placeholder="Search"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="absolute top-0 right-0 p-2.5 text-sm font-medium h-full text-white bg-transparent z-20 flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
+                  <span class="sr-only">Search</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div
+          class="m-[0.6rem_0_0.7rem_0] inline-block break-words font-['Airbone'] font-light xl:text-[1rem] text-[0.7rem] text-[#FFFFFF]  "
+        >
+          HOLIDAY SALE | 40% off select items + Free Domestic Expedited Shipping
+        </div>
+        <div class="m-[0.6rem_0_0.6rem_0] flex flex-row box-sizing-border">
+          <div class="m-[0.1rem_0rem_0_0] flex box-sizing-border">
+            <span
+              class="break-words font-['Satoshi'] font-light xl:text-[1rem] sm:text-[0.5rem] text-[#FFFFFF]"
+            >
+              Indian Rupees (INR)
+            </span>
+          </div>
+          <div class="flex w-[1.3rem] h-[1.3rem] box-sizing-border">
+            <img
+              class="w-[1.3rem] h-[1.3rem]"
+              src="../assets/vectors/mask_group_21_x2.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+<nav class="bg-[url('../assets/images/c2.png')] bg-[0%_30%] bg-cover bg-no-repeat h-[40rem]  w-full border-gray-200 dark:bg-gray-900 dark:border-gray-700 z-20">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:mt-[0rem] bg-transparent">
+
+    <button data-collapse-toggle="navbar-multi-level" type="button" class=" relative right-5 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto flex bg-transparent" id="navbar-multi-level">
+      <ul class=" bg-transparent flex flex-col font-medium p-4 md:p-0 mt-0 ml-[14rem] border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="helli.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+        </li>
+        <li>
+          <a href="collections.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">New Collections</a>
+        </li>
+        <li>
+          <a href="arrival.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Shop</a>
+        </li>
+      <li><a href="#" class="flex items-center space-x-3 rtl:space-x-reverse ">
+        <img src="../assets/images/heli_br.png" class=" h-14 relative ml-[2rem] " alt="Flowbite Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+    </a></li>
+      
+      
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blogs</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Lookbooks</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ethics</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Account</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+   
+    <section>
+      <div
+        class=" relative xl:m-[0rem_0.1rem_0.3rem_0] break-words font-['Airbone'] font-semibold text-[1.4rem] underline text-[#262626] flex justify-center items-center pt-10 ml-[3rem] "
+      >
+      LUXURY COLLECTIONS CREATED WITH CARE
+      </div>
+
+      <div
+        class="relative m-[0_0rem_1.1rem_0] flex justify-center break-words font-['Satoshi'] font-medium xl:text-[3.4rem] text-[#000000]  text-[1.5rem]"
+      >
+        NEW ARRIVALS
+      </div>
+
+      <!-- <div class="container mx-auto w-full overflow-hidden relative">
+        <div class="w-full h-full absolute">
+            <div class=" h-full absolute z-50 left-0" style="background: linear-gradient(to right, #edf2f7 0%, rgba(255, 255, 255, 0) 100%);"></div>
+            <div class=" h-full absolute z-50 right-0" style="background: linear-gradient(to left, #edf2f7 0%, rgba(255, 255, 255, 0) 100%);"></div>
+        </div>
+
+        <div class="carousel-items flex items-center  gap-[2rem] w-[100rem]" style=" animation: carouselAnim 10s infinite alternate linear;">
+
+            <div class="carousel-focus flex items-center flex-col relative bg-white">
+              <img src="../assets/images/rectangle_5.jpeg">
+            </div>
+
+            <div class="carousel-focus flex items-center flex-col relative bg-white">
+              <img src="../assets/images/rectangle_11.jpeg">
+            </div>
+
+            <div class="carousel-focus flex items-center flex-col relative bg-white">
+              <img src="../assets/images/rectangle_12.jpeg">
+            </div>
+
+            <div class="carousel-focus flex items-center flex-col relative bg-white">
+              <img src="../assets/images/rectangle_6.jpeg" class="w-full h-full">
+            </div>
+
+            <div class="carousel-focus flex items-center flex-col relative bg-white">
+              <img src="../assets/images/rectangle_34.jpeg">
+            </div>
+        </div>
+
+    </div> -->
+       
+    
+    <div class="tcontainer">
+      <input type="radio" name="dot" id="one">
+      <input type="radio" name="dot" id="two">
+      <div class="main-card">
+        <div class="cards">
+          <div class="card">
+           
+             <div class="img">
+              <img src="../assets/images/rectangle_11.jpeg" alt="">
+             </div>
+          </div>
+          <div class="card">
+             <div class="img">
+              <img src="../assets/images/rectangle_5.jpeg" alt=""> 
+             </div>
+          </div>
+          <div class="card">
+           
+            <div class="img">
+             <img src="../assets/images/rectangle_42.jpeg" alt="">
+            </div>
+         </div>
+          <div class="card">
+             <div class="img">
+              <img src="../assets/images/rectangle_331.jpeg" alt="">
+           </div>
+          </div>
+          <div class="card">
+           
+            <div class="img">
+             <img src="../assets/images/rectangle_351.jpeg" alt="">
+            </div>
+         </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+           
+             <div class="img">
+              <img src="../assets/images/rectangle_34.jpeg" alt="">
+             </div>            
+          </div>
+          <div class="card">
+             <div class="img">
+              <img src="../assets/images/rectangle_351.jpeg" alt=""> 
+             </div>
+          </div>
+          
+          <div class="card">
+             <div class="img">
+              <img src="../assets/images/rectangle_42.jpeg" alt="">
+           </div>
+          </div>
+          <div class="card">
+            <div class="img">
+             <img src="../assets/images/rectangle_331.jpeg" alt="">
+          </div>
+         </div>
+         <div class="card">
+           
+          <div class="img">
+           <img src="../assets/images/rectangle_11.jpeg" alt="">
+          </div>
+       </div>
+        </div>
+      </div>
+      <div class="button">
+        <label for="one" class=" active one"></label>
+        <label for="two" class="two"></label>
+      </div>
+    </div>
+    
+         
+    <button
+              type="button"
+              class="xl:m-[-3rem_0_1rem_42rem] text-black border-l border-[#000] border-b border-[#000] border-t border-[#000] border-r border-[#000] hover:text-white border border-\[3rem_solid_\#000\] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-semibold text-sm md:text-md px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 relative  md:m-[1rem_0_1rem_18rem]   sm:relative m-[1rem_0_1rem_5rem]"
+            >
+              View Our All Collections
+            </button>
+    </section>
+    <section>
+      <div
+        class="bg-[url('../assets/images/slider.png')] bg-[0%_30%] bg-cover bg-no-repeat h-[40rem]  w-full z-20 top-[7rem] left-0 border-b border-gray-200 dark:border-gray-600">
+        
+        <!-- <div class=" justify-center items-center">
+          <div
+            class="relative xl:w-full xl:left-[50rem] xl:top-[16rem] xl:m-[0_0.1rem_0.5rem_0] inline-block break-words font-['Satoshi'] font-semibold xl:text-[1.5rem] md:text-[1.1rem] underline text-[#000] text-[1rem] left-[1rem] top-[10rem] md:m-[0_0.1rem_2rem_0]"
+          >
+            LUXURY SPORTS COLLECTIONS WITH HIGHEST QUALITY
+          </div>
+          <span
+            class="relative xl:top-[18rem] xl:left-[45rem] xl:w-[2rem] xl:m-[0_17.6rem_0_0] break-words font-['Satoshi'] font-semibold xl:text-[3.8rem] leading-[1.133] text-[#000] text-[2.5rem] top-[12rem] left-[2rem] md:top-[14rem] md:text-[2.8rem] md:m-[0_17.6rem_0_-30rem]"
+          >
+           OUR NEW COLLECTIONS 
+          </span>
+
+          <div
+            class="xl:absolute xl:left-[60%] xl:top-[115rem] flex p-[1.7rem_1rem_1.7rem_1rem] w-[25.7rem] box-sizing-border relative  top-[12rem] md:top-[14rem]"
+          >
+            <button 
+              type="button"
+              class=" text-black bg-transparent  border-l border-[#000] border-b border-[#000] border-t border-[#000] border-r border-[#000] hover:text-white  font-normal  text-[1.2rem]  hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs xl:px-5 xl:py-2.5 text-center me-2 mb-2 dark:border-gray-900 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800  px-2  py-2"
+            >
+              <a href="arrival.html">Shop New In</a>
+            </button>
+            <button
+              type="button"
+              class=" text-black bg-transparent  border-l border-[#000] border-b border-[#000] border-t border-[#000] border-r border-[#000] hover:text-white  font-normal  text-[1.2rem]  hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs xl:px-5 xl:py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800  px-2  py-2"
+            >
+              View Our All Collections
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <section class=" bg-transparent">
+      <div
+        class=" relative xl:m-[0_0.1rem_0_0] break-words font-['Satoshi'] font-semibold xl:text-[3.4rem] underline text-[#000] flex justify-center items-center pt-10 text-[2rem]"
+      >
+        BEST SELLERS
+      </div>
+
+      <div class="tcontainer">
+        <input type="radio" name="dot" id="one">
+        <input type="radio" name="dot" id="two">
+        <div class="main-card">
+          <div class="cards">
+            <div class="card">
+             
+               <div class="img">
+                <img src="../assets/images/rectangle_11.jpeg" alt="">
+               </div>
+            </div>
+            <div class="card">
+               <div class="img">
+                <img src="../assets/images/rectangle_5.jpeg" alt=""> 
+               </div>
+            </div>
+            <div class="card">
+             
+              <div class="img">
+               <img src="../assets/images/rectangle_42.jpeg" alt="">
+              </div>
+           </div>
+            <div class="card">
+               <div class="img">
+                <img src="../assets/images/rectangle_331.jpeg" alt="">
+             </div>
+            </div>
+            <div class="card">
+             
+              <div class="img">
+               <img src="../assets/images/rectangle_42.jpeg" alt="">
+              </div>
+           </div>
+          </div>
+          <div class="cards">
+            <div class="card">
+             
+               <div class="img">
+                <img src="../assets/images/rectangle_34.jpeg" alt="">
+               </div>            
+            </div>
+            <div class="card">
+               <div class="img">
+                <img src="../assets/images/rectangle_11.jpeg" alt=""> 
+               </div>
+            </div>
+            
+            <div class="card">
+               <div class="img">
+                <img src="../assets/images/rectangle_42.jpeg" alt="">
+             </div>
+            </div>
+            <div class="card">
+              <div class="img">
+               <img src="../assets/images/rectangle_331.jpeg" alt="">
+            </div>
+           </div>
+           <div class="card">
+             
+            <div class="img">
+             <img src="../assets/images/rectangle_11.jpeg" alt="">
+            </div>
+         </div>
+          </div>
+        </div>
+        <div class="button">
+          <label for="one" class=" active one"></label>
+          <label for="two" class="two"></label>
+        </div>
+      </div>
+      
+        
+      <button
+              type="button"
+              class="left-[26rem] relative text-black hover:text-white hover:bg-black border border-\[3rem_solid_\#000\]  focus:ring-4 focus:outline-none focus:ring-gray-300 font-semibold text-sm md:text-md px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 md:m-[0_0_0_20rem]"
+            >
+              Explore More
+            </button>
+    </section>
+    <section>
+      <div
+        class="xl:flex justify-center flex-row gap-[0_1.4rem] top-[5rem] w-full box-sizing-border pb-4 block"
+ >
+        <div
+          class="bg-[url('../assets/images/rectangle_17.jpeg')] bg-[10%_50%] bg-cover bg-no-repeat relative xl:flex p-[23.6rem_0.1rem_3.6rem_0]  box-sizing-border top-[7rem] xl:w-[35%] h-[20vh] left[-7rem] w-[100%] block "
+        >
+        </div>
+        <div
+          class="  relative  p-[23.6rem_0.1rem_3.6rem_0] w-[40rem] box-sizing-border  "> 
+          <span class=" relative left-[5rem] top-[-12.5rem] m-[0_0.1rem_0.5rem_0] font-semibold text-[1.2rem] inline-block break-words font-['Satoshi']  md:text-[1.1rem] ">Don't take our word for it...</span>
+          <div class="flex justify-center flex-row gap-[0_1.4rem] relative left-[-8rem] top-[-12rem]  w-full box-sizing-border pb-4 ">
+            <i class="ri-star-fill font-semibold text-[1.6rem]"></i>
+            <i class="ri-star-fill font-semibold text-[1.6rem]"></i>
+            <i class="ri-star-fill font-semibold text-[1.6rem]"></i>
+            <i class="ri-star-fill font-semibold text-[1.6rem]"></i>
+            <i class="ri-star-fill font-semibold text-[1.6rem]"></i>
+          </div>
+          <span class="xl:text-[1.8rem] relative xl:left-[5rem] top-[-12.8rem] m-[0_0.1rem_0.5rem_0] xl:w-full inline-block break-words font-['Airbone'] font-medium left-[2rem] w-[60%] text-[1.7rem] md:w-full">Absolutely exceptional quality <br/>in every aspect, beautiful</span>
+          <span class=" relative left-[10rem] top-[-12rem]">&mdash;&mdash;&mdash;&mdash; John Doe</span>
+          <div
+            class="absolute left-[10%] top-[28rem] flex p-[1rem_1rem_1rem_1rem] w-[25.7rem] box-sizing-border">
+            <button
+              type="button"
+              class=" text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-3 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+            >
+            <i class="ri-arrow-left-s-line font-normal text-[2.5rem]"></i>
+            </button>
+            <button
+              type="button"
+              class=" text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF] font-medium text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-3 py-5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+            >
+            <i class="ri-arrow-right-s-line font-normal text-[2.5rem]"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="xl:flex justify-center flex-row gap-[0_1.4rem] xl:top-[5rem] w-full box-sizing-border pb-4 block "
+      >
+        <div
+          class=" relative  p-[23.6rem_0.1rem_3.6rem_0] w-[40rem] box-sizing-border"> 
+          <span class="xl:text-[3.2rem] relative xl:left-[10rem] xl:top-[-14.5rem] m-[0_0.1rem_0.5rem_0] inline-block break-words font-['Airbone'] font-medium text-[2rem] left-[5rem] top-[-30rem] md:left-[15rem] md:top-[-22rem]">HELI'S STORY</span>
+          <span class="text-[1.7rem] relative xl:left-[3rem] xl:top-[-15.4rem] xl:w-[40rem] m-[0_0.1rem_0.5rem_0] inline-block break-words font-['Satoshi'] font-medium w-[22rem] left-[-12rem] top-[-22rem] md:w-[34rem] md:left-[7rem]">HELI's Summer Collection Makes You Look and </span>
+          <span class=" text-[1.7rem] relative xl:left-[10rem] xl:top-[-15.5rem] w-[36rem] m-[0_0.1rem_0.5rem_0] inline-block break-words font-['Satoshi'] font-medium left-[3rem] top-[-22rem] md:left-[13.5rem]">Feel Confident and Stylish</span>
+            <div class=" xl:left-[18rem] relative  xl:top-[-15rem] h-[8rem]  border-l border-[#000]  top-[-20rem] left-[12.5rem] md:left-[22.5rem]"> </div>
+            <button
+            type="button"
+            class=" xl:m-[0_0_0_14rem] relative xl:top-[-13.5rem] text-black hover:text-white border border-[0.1rem_solid_#000] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-xs text-sm md:text-xs px-7 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 ml-[8.5rem] top-[-18rem] md:ml-[18rem]"
+          >
+            Learn More
+          </button>
+        </div>
+        <div
+          class="bg-[url('../assets/images/rectangle_18.png')] bg-[10%_50%] bg-cover bg-no-repeat relative xl:flex p-[23.6rem_0.1rem_3.6rem_0]  box-sizing-border xl:top-[7rem] xl:w-[35%] h-[20vh] left[-7rem] w-[100%] top-[-13.5rem]">
+        </div>
+      </div>
+    </section>
+    <section class="top-[-6rem] xl:left-[0rem] relative left-[2rem]">
+
+      <div
+        class="xl:flex justify-center flex-row gap-[0_1.4rem] w-full box-sizing-border pb-4 block md:flex">
+        <div
+          class="bg-[url('../assets/images/rectangle_33.jpeg')] bg-[10%_50%] bg-cover bg-no-repeat relative flex p-[23.6rem_0.1rem_3.6rem_1rem] w-[30rem] box-sizing-border md:w-[16rem]">
+          
+          <div
+            class="bg-transparent absolute left-[50%] top-[22.4rem] translate-x-[-50%] w-[30rem] h-[3.8rem] "></div>
+            <span
+            class="relative top-[-3rem] left-[4rem]  break-words font-['Airbone'] font-light text-[1.5rem] text-[#FFFFFF] w-full">
+            Formal Outfit
+          </span>
+          <span
+            class="relative left-[-3.5rem] break-words font-['Inter'] font-medium text-[1.1rem] text-[#FFFFFF] underline text-[#FFFFFF] w-full top-[1.5rem]">
+            SHOP NOW
+          </span>
+        </div>
+        <div
+          class="bg-[url('../assets/images/rectangle_34.jpeg')] bg-[50%_50%] bg-cover bg-no-repeat relative flex p-[23.6rem_0.1rem_3.6rem_0] w-[30rem] box-sizing-border md:w-[16rem]"
+        >
+          <div
+            class="bg-transparent absolute left-[50%] top-[22.4rem] translate-x-[-50%] w-[20rem] h-[3.8rem]"
+          ></div>
+          <span
+            class="relative top-[-3rem] left-[4rem]  break-words font-['Airbone'] font-light text-[1.4rem] text-[#FFFFFF] ">
+            Blazers & Suits
+          </span>
+          <span
+            class="relative left-[-3.2rem] break-words font-['Inter'] font-medium text-[1.1rem] text-[#FFFFFF] underline text-[#FFFFFF] w-full top-[1.5rem]">
+            SHOP NOW
+          </span>
+        </div>
+        <div
+          class="bg-[url('../assets/images/rectangle_351.jpeg')] bg-[50%_50%] bg-cover bg-no-repeat relative flex p-[23.6rem_0_3.6rem_0rem] w-[30rem] box-sizing-border md:w-[16rem]"
+        >
+          <div
+            class="bg-transparent absolute left-[50%] top-[22.4rem] translate-x-[-50%] w-[20rem] h-[3.8rem]"></div>
+            <span
+            class="relative top-[-3rem] left-[4rem]  break-words font-['Airbone'] font-light text-[1.3rem] text-[#FFFFFF] w-full">
+            Casual Outfit
+          </span>
+          <span
+            class="relative left-[-4.5rem] break-words font-['Inter'] font-medium text-[1.1rem] text-[#FFFFFF] underline text-[#FFFFFF] w-full top-[1.5rem]">
+            SHOP NOW
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="top-[-6rem] xl:left-[0rem] relative left-[2rem]">
+
+      <div
+        class="xl:flex justify-center flex-row gap-[0_1.4rem] w-full box-sizing-border pb-4 block md:flex">
+        <div
+          class="bg-[url('../assets/images/rectangle_331.jpeg')] bg-[10%_50%] bg-cover bg-no-repeat relative flex p-[23.6rem_0.1rem_3.6rem_0] w-[30rem] box-sizing-border md:w-[16rem]">
+          
+          <div
+            class="bg-transparent absolute left-[50%] top-[22.4rem] translate-x-[-50%] w-[20rem] h-[3.8rem] "></div>
+            <span
+            class="relative top-[-3rem] left-[4rem]  break-words font-['Airbone'] font-light text-[1.3rem] text-[#FFFFFF] w-full">
+            Hoodie Outfit
+          </span>
+          <span
+            class="relative left-[-4.5rem] break-words font-['Inter'] font-medium text-[1.1rem] text-[#FFFFFF] underline text-[#FFFFFF] w-full top-[1.5rem]">
+            SHOP NOW
+          </span>
+        </div>
+        <div
+          class="bg-[url('../assets/images/rectangle_341.jpeg')] bg-[50%_50%] bg-cover bg-no-repeat relative flex p-[23.6rem_0.1rem_3.6rem_0] w-[30rem] box-sizing-border md:w-[16rem]"
+        >
+          <div
+            class="bg-transparent absolute left-[50%] top-[22.4rem] translate-x-[-50%] w-[20rem] h-[3.8rem]"
+          ></div>
+          <span
+            class="relative top-[-3rem] left-[4rem]  break-words font-['Airbone'] font-light text-[1.3rem] text-[#FFFFFF] w-full">
+            Sports Outfit
+          </span>
+          <span
+            class="relative left-[-4rem] break-words font-['Inter'] font-medium text-[1.1rem] text-[#FFFFFF] underline text-[#FFFFFF] w-full top-[1.5rem]">
+            SHOP NOW
+          </span>
+        </div>
+        <div
+          class="bg-[url('../assets/images/rectangle_35.jpeg')] bg-[50%_50%] bg-cover bg-no-repeat relative flex p-[23.6rem_0_3.6rem_0rem] w-[30rem] box-sizing-border md:w-[16rem]"
+        >
+          <div
+            class="bg-transparent absolute left-[50%] top-[22.4rem] translate-x-[-50%] w-[20rem] h-[3.8rem]">
+          </div>
+          <span
+          class="relative top-[-3rem] left-[3rem]  break-words font-['Airbone'] font-light text-[1.3rem] text-[#FFFFFF] w-full">
+          Kurtas & Punjabi
+        </span>
+        <span
+          class="relative left-[-4.5rem] break-words font-['Inter'] font-medium text-[1.1rem] text-[#FFFFFF] underline text-[#FFFFFF] w-full top-[1.5rem]">
+          SHOP NOW
+        </span>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="xl:flex justify-center flex-row gap-[0_1.4rem] top-[5rem] w-full box-sizing-border pb-4 "
+      >
+      <div
+      class=" bg-[url('../assets/images/rectangle_19.jpeg')] bg-[0%_30%] bg-cover bg-no-repeat relative  p-[20.6rem_0rem_0_0] xl:w-[40rem] h-[30rem] ml-[0rem] box-sizing-border w-[30rem] xl:ml-[0rem] md:ml-[10rem]"> 
+      
+    </div>
+        <div
+          class=" bg-white relative  p-[20.6rem_0rem_0_0] w-[40rem] h-[30rem] box-sizing-border xl:ml-[0rem] md:ml-[13.5rem]"> 
+          <span class="xl:text-[2.4rem] relative xl:left-[7rem] bottom-[18rem] m-[0_0.1rem_0.5rem_0] inline-block break-words font-['Airbone'] text-black font-light text-[1.8rem] left-[1rem]">STYLE KNOWS NO AGE</span>
+
+          <span class=" text-[1.2rem] relative xl:left-[12.2rem] bottom-[18rem] xl:w-[36rem] m-[0_0.1rem_0.5rem_0] inline-block break-words font-['Satoshi'] text-black font-medium left-[3rem] w-[20rem]">HELI's TOP COLLECTIONS  Makes</span>
+          <span class=" text-[1.2rem] relative xl:left-[12.2rem] bottom-[18rem] w-[36rem] m-[0_0.1rem_0.5rem_0] inline-block break-words font-['Satoshi'] text-black font-medium left-[2rem]">You Look and Feel Confident and Stylish</span>
+            <div class=" xl:left-[22rem] relative  bottom-[17rem] h-[8rem]  border-l border-[#000] left-[12rem]"> </div>
+            <button
+            type="button"
+            class=" xl:m-[0_0_0_18.8rem] relative bottom-[15rem] text-black border-l border-[#000] border-b border-[#000] border-t border-[#000] border-r border-[#000] hover:text-white  hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-xs text-sm md:text-xs px-7 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 ml-[8rem]"
+          >
+            Learn More
+          </button>
+        </div>
+        
+      </div>
+    </section>
+    <section>
+      
+      <div
+        class="xl:flex justify-center flex-row gap-[0_1.4rem] top-[-5rem] w-full box-sizing-border pb-4 block"
+      >
+      <div
+       class="bg-black relative   box-sizing-border xl:top-[7rem] xl:w-[35%]  left[-7rem] w-[100%] top-[3rem]">
+       <span class="xl:text-[2.7rem] relative xl:left-[3rem] top-[1rem] left-[3rem]  m-[0_0.1rem_0_0] inline-block break-words font-['Airbone'] text-white font-light text-[2rem] md:left-[12rem]">OUR LOCATION </span>
+       
+       <div class="bg-white m-[2rem_0.1rem_0.2rem_0.15rem] p-[0_0_11rem_0rem] xl:p-[0_0_11rem_0] md:p-[0_0_11rem_5rem]">
+        <span class=" xl:left-[2rem] top-[2rem] relative m-[5rem_0_0_1rem] text-[1.5rem] xl:w-full font-medium font-['Satoshi'] text-black left-[0rem] w-[60%]">Swastika Textiles, Kolkata ,West Bengal.</span><br/>
+        <span class="xl:left-[2rem] top-[2rem] relative m-[5rem_0_0_1rem] text-[1.1rem] justify-center xl:w-[20rem] font-medium font-['Satoshi'] text-black  left-[0rem] w-[5rem]">Address: Swastika Textiles , 69 Dr. Sudhir Bose road,</span><br/>
+        <span class="xl:left-[2rem] top-[2rem] relative m-[5rem_0_0_1rem] text-[1.1rem] justify-center w-[20rem] font-medium font-['Satoshi'] text-black left-[0rem]">Jamal Pada, Kolkata 700023. West Bengal, India.</span>
+        <span class="left-[-2rem] top-[4rem] relative  flex m-[0_0_0_1rem] text-[1.1rem] justify-center w-[20rem] font-medium font-['Satoshi'] text-black">Monday-Sunday: 9am-9pm</span>
+        <div
+            class=" bg-white relative left-[1rem] top-[6rem] flex  w-[25.7rem] box-sizing-border">
+            <button
+              type="button"
+              class=" text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF]  font-normal text-[3.2rem] md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs xl:px-7 xl:py-4 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+            >
+            <i class="ri-map-pin-fill text-[1rem]"></i><span class="text-[1rem] font-normal"> Directions</span> 
+            </button>
+            <button
+              type="button"
+              class="text-black bg-white hover:text-white border border-[0.1rem_solid_#FFFFFF] font-medium  md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-7 py-3 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+            >
+            <i class="fa-solid fa-phone-volume text-[1rem]"></i><span class="text-[1rem] font-normal">+ 123 456 7890</span>
+            </button>
+          </div>
+       </div>
+      </div>  
+      <div
+       class="bg-[url('../assets/images/rectangle_30.jpeg')] bg-[0%_30%] bg-cover bg-no-repeat relative flex p-[24.6rem_0.1rem_3.6rem_0]  box-sizing-border top-[7rem] xl:w-[35%] h-[20vh] left[-7rem] w-[100%]">
+      </div>
+        
+      </div>
+    </section>
+    <!-- <section>
+      <div
+      class="m-[7rem_0.1rem_0.3rem_2rem] break-words font-['Satoshi'] font-medium text-[3.4rem] underline text-[#000] flex justify-center items-center pt-10"
+    >
+      HOLLIDAY SEASON
+    </div>
+    <div class="flex justify-center flex-row gap-[0_2rem] top-[5rem] w-full box-sizing-border pt-4">
+      <span class="font-semibold text-[4rem] font-['Satoshi']">25</span>
+      <span class="font-normal text-[2rem] m-[1.2rem_0_0_0]">&mdash;&mdash;&mdash;</span>
+      <span class="font-semibold text-[4rem] font-['Satoshi'] ">13</span>
+      <span class="font-normal text-[2rem] m-[1.2rem_0_0_0]">&mdash;&mdash;&mdash;</span>
+      <span class="font-semibold text-[4rem] font-['Satoshi']">37</span>
+      <span class="font-normal text-[2rem] m-[1.2rem_0_0_0]">&mdash;&mdash;&mdash;</span>
+      <span class="font-semibold text-[4rem] font-['Satoshi']">55</span>
+    </div>
+    <div class="flex justify-center flex-row gap-[0_9.8rem]  top-[5rem] w-full box-sizing-border pb-4">
+      <span class="font-normal text-[1.5rem] font-['Satoshi'] ">Days</span>
+      <span class="font-normal text-[1.5rem] font-['Satoshi'] ">Hours</span>
+      <span class="font-normal text-[1.5rem] font-['Satoshi']">Minutes</span>
+      <span class="font-normal text-[1.5rem] font-['Satoshi']">Seconds</span>
+    </div>
+    </section>
+    <section>
+      <div
+        class=" bg-[url('../assets/images/man_striped_shirt_wearing_straw_hat_walks_through_streets_small_spanish_town_1.jpeg')] bg-[0%_30%] bg-cover bg-no-repeat h-[40rem]  w-full z-20 top-[8rem] left-0 border-b border-gray-200 dark:border-gray-600">
+        
+        <div class="flex justify-center items-center">
+          <div
+            class="relative left-[35rem] top-[10rem] m-[0_0.1rem_0.5rem_0] inline-block break-words font-['Satoshi'] font-semibold text-[1.8rem]   text-[#FFFFFF]"
+          >
+          Timeless Style Meets Modern Elegance
+          </div>
+          <span
+            class="relative top-[15rem] left-[5rem] m-[0_17.6rem_0_0] break-words font-['Satoshi'] font-medium text-[3.2rem] w-[36rem] leading-[1.133] text-[#FFFFFF]"
+          >
+          Unleash Your Best Look with HELI
+          </span>         
+          <button
+              type="button"
+              class=" text-white bg-transparent hover:text-white border border-[2rem_solid_#FFFFFF]  font-semibold top-[24rem] right-[47rem] relative md:text-[2rem] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-sm text-sm md:text-xs px-7 py-4 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
+            >
+            <span class=" text-[1rem] "> Shop Right Now</span> 
+            </button>
+          </div>
+          
+        </div>
+      </div>
+    </section> -->
+    <section class="top-[12rem]  mb-[1rem] relative">
+
+      <div
+        class="xl:flex justify-center flex-row gap-[0_1.4rem] w-full xl:left-[0rem] box-sizing-border left-[0rem] pb-4 block md:flex md:left-[1rem]">
+        <div
+          class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh] w-[100%] md:p-[3rem_3rem_3rem_3rem]">
+          <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[40%] md:left-[1rem] md:w-[80%] left-[4rem] ">
+            <img src="../assets/images/package_1.png" class="xl:w-[100%] relative w-[100%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%] ">
+          </div>
+          <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[7.5rem] left-[4rem] top-[-1rem] md:left-[2.5rem]">FAST</span><br/>
+          <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[0.5rem]  left-[.5rem] top-[-1rem] w-full md:left-[2rem] text-[1.5rem]">GLOBAL SHIPPING</span>
+            
+        </div>
+        <div
+          class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh]  w-[100%] md:p-[3rem_3rem_3rem_3rem]">
+          <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[40%] md:left-[1rem] md:w-[80%] left-[4rem]">
+            <img src="../assets/images/package_12.png" class="xl:w-[100%] relative w-[100%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%]">
+          </div>
+          <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[5.5rem] left-[3rem] top-[-1rem] md:left-[1.5rem]">30 DAYS</span><br/>
+          <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[1.5rem] left-[1.2rem] top-[-1rem] w-full md:left-[1.6rem] text-[1.5rem]">RETURN POLICY</span>
+            
+        </div>
+        <div
+          class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh] w-[100%] md:p-[3rem_3rem_3rem_3rem]">
+          <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[40%] md:left-[1rem] md:w-[80%] left-[4rem]">
+            <img src="../assets/images/package_11.png" class="xl:w-[100%] relative w-[100%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%]">
+          </div>
+          <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[7.5rem] left-[4.5rem] top-[-1rem] md:left-[2.5rem]">100%</span><br/>
+          <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[0.5rem] left-[.5rem] top-[-1rem] w-full md:left-[2rem] text-[1.4rem]">SECURE PAYMENTS</span>
+            
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="xl:flex justify-center flex-row gap-[0_1.4rem] w-full box-sizing-border relative top-[12rem] border-t-2 border-gray-200 pb-4 block">
+          <div class="xl:left-[-5rem] relative top-[7rem] left-[5rem] " >
+            <ul class="list-none gap-[0_1.4rem] ">
+              <li class="font-semibold underline text-[#000] text-[1.8rem]">Company</li>
+              <li class="text-[1.2rem]">Contact Us</li>
+              <li class="text-[1.2rem]">Gift Card</li>
+              <li class="text-[1.2rem]">Blog</li>
+              <li class="text-[1.2rem]">Lookbook</li>
+              <li class="text-[1.2rem]">Sustainability</li>
+            </ul>
+          </div>
+          <div class="xl:left-[0rem] relative top-[7rem] left-[5rem]" >
+            <ul class="list-none gap-[0_1.4rem] ">
+              <li class="font-semibold underline text-[#000] text-[1.8rem]">Get Help</li>
+              <li class="text-[1.2rem]">FAQ</li>
+              <li class="text-[1.2rem]">Terms of Service</li>
+              <li class="text-[1.2rem]">Return Policy</li>
+              <li class="text-[1.2rem]">Shipping Info</li>
+            </ul>
+          </div>
+          <div class="xl:right-[1rem] relative top-[7rem] left-[5rem] " >
+            <ul class="list-none gap-[0_1.4rem] ">
+              <li class="font-semibold underline text-[#000] text-[1.8rem]">Account</li>
+              <li class="text-[1.2rem]">Log in</li>
+              <li class="text-[1.2rem]">Sign Up</li>
+              <li class="text-[1.2rem]">Gift Card</li>
+            </ul>
+          </div>
+          <div class="relative xl:top-[7rem] xl:left-[15rem] font-normal font-['Satoshi'] xl:text-[1.8rem] xl:w-[40%] text-[1.4rem] w-[80%] left-[5rem] top-[8rem]">
+            <span>Sign up to receive 10% off your first order <br/>& exclusive product launches, and unique experiences.</span>
+            <form action="#" class=" flex relative xl:m-[1rem_5rem_0_0] border  border-gray-900 m-[2rem_8rem_0_0]">
+              <input type="text" placeholder="Enter Your Email" class=" xl:p-[1rem_5rem_1rem_1rem] p-[1rem_3rem_1rem_1rem] ">
+              <button class="bg-black text-[#fff] text-[1.5rem] xl:p-[1rem_3rem_1rem_3rem]  xl:right-[3.4rem] relative right-[10rem] p-[1rem_1rem_1rem_1rem] md:right-[-3rem]">Submit</button>
+             </form>
+             <div class="flex right-[4rem] relative top-[5rem] ">
+                    <div class="bg-transparent relative bottom-[2rem] left-[6rem] ">
+                      <img src="../assets/images/facebook_app_symbol_11.png" class="w-[42%] h-[82%]  border border-gray-900 rounded-full relative  ">
+                    </div>
+                    <div class="bg-transparent relative bottom-[2rem] left-[3rem] ">
+                      <img src="../assets/images/facebook_app_symbol_111.png" class="w-[42%] h-[82%]  border border-gray-900 rounded-full relative  ">
+                    </div>
+                    <div class="bg-transparent relative bottom-[2rem] left-[0] ">
+                      <img src="../assets/images/facebook_app_symbol_112.png" class="w-[42%] h-[82%]  border border-gray-900 rounded-full relative  ">
+                    </div>
+             </div>
+
+          </div>
+      </div>
+    </section>
+    <section>
+      <h1 class=" relative font-semibold xl:text-[34rem] font-['Satoshi'] xl:top-[8rem] left-[2rem] text-[8rem] top-[22rem] md:left-[7rem]">HELI</h1>
+      <p class="xl:w-full font-medium xl:text-[1.5rem] font-['Satoshi'] relative xl:bottom-[4rem] xl:left-[17rem] xl:top-[0rem]  top-[20rem] left-[3rem] text-[1rem] w-[80%]">&copy; Copyright <strong>2024</strong>HELI, All rights reserved. Designed By <STRong>AHAAN SOFTWARE CONSULTING</STRong> </p>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+  </body>
+</html>

@@ -739,6 +739,14 @@ video {
   left: -2rem;
 }
 
+.left-\[-3\.2rem\] {
+  left: -3.2rem;
+}
+
+.left-\[-3\.5rem\] {
+  left: -3.5rem;
+}
+
 .left-\[-3rem\] {
   left: -3rem;
 }
@@ -801,6 +809,10 @@ video {
 
 .left-\[1rem\] {
   left: 1rem;
+}
+
+.left-\[26rem\] {
+  left: 26rem;
 }
 
 .left-\[2rem\] {
@@ -973,6 +985,10 @@ video {
 
 .top-\[0rem\] {
   top: 0rem;
+}
+
+.top-\[1\.5rem\] {
+  top: 1.5rem;
 }
 
 .top-\[10rem\] {
@@ -1248,6 +1264,10 @@ video {
 
 .ml-\[0rem\] {
   margin-left: 0rem;
+}
+
+.ml-\[14rem\] {
+  margin-left: 14rem;
 }
 
 .ml-\[2rem\] {
@@ -2911,6 +2931,10 @@ video {
   background-color: rgb(255 255 255 / 0.3);
 }
 
+.bg-\[url\(\'\.\.\/assets\/images\/c2\.png\'\)\] {
+  background-image: url('../assets/images/c2.png');
+}
+
 .bg-\[url\(\'\.\.\/assets\/images\/man_striped_shirt_wearing_straw_hat_walks_through_streets_small_spanish_town_1\.jpeg\'\)\] {
   background-image: url('../assets/images/man_striped_shirt_wearing_straw_hat_walks_through_streets_small_spanish_town_1.jpeg');
 }
@@ -2969,6 +2993,10 @@ video {
 
 .bg-\[url\(\'\.\.\/assets\/images\/rectangle_44\.jpeg\'\)\] {
   background-image: url('../assets/images/rectangle_44.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/images\/slider\.png\'\)\] {
+  background-image: url('../assets/images/slider.png');
 }
 
 .bg-gradient-to-b {
@@ -3174,6 +3202,10 @@ video {
 
 .p-\[23\.6rem_0\.1rem_3\.6rem_0\] {
   padding: 23.6rem 0.1rem 3.6rem 0;
+}
+
+.p-\[23\.6rem_0\.1rem_3\.6rem_1rem\] {
+  padding: 23.6rem 0.1rem 3.6rem 1rem;
 }
 
 .p-\[23\.6rem_0_3\.6rem_0rem\] {
@@ -4369,6 +4401,106 @@ video {
   }
 }
 
+.tcontainer{
+  max-width: 1450px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+  margin-left: 4rem;
+}
+
+.tcontainer .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+
+.tcontainer .main-card .cards{
+  width: calc(300% / 3 );
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+
+.main-card .cards .card{
+  width: calc(100% / 5 - 10px );
+  background: #fff;
+  border-radius: 12px;
+  padding: 1px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+
+.card .content .img img{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tcontainer .button{
+  margin-top: 22px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button label{
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #000;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.button label.active{
+  width: 35px;
+}
+
+#one:checked ~ .button .one{
+  width: 35px;
+}
+
+#one:checked ~ .button .two{
+  width: 15px;
+}
+
+#two:checked ~ .button .one{
+  width: 15px;
+}
+
+#two:checked ~ .button .two{
+  width: 35px;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-card .cards .card{
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .main-card .cards .card{
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -4408,6 +4540,11 @@ video {
 .hover\:border-gray-800:hover {
   --tw-border-opacity: 1;
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
+}
+
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-blue-700:hover {
@@ -4767,6 +4904,10 @@ video {
     margin-top: 0px;
   }
 
+  .md\:mt-\[0rem\] {
+    margin-top: 0rem;
+  }
+
   .md\:mt-\[2rem\] {
     margin-top: 2rem;
   }
@@ -5101,6 +5242,10 @@ video {
     top: 0rem;
   }
 
+  .xl\:top-\[115rem\] {
+    top: 115rem;
+  }
+
   .xl\:top-\[126rem\] {
     top: 126rem;
   }
@@ -5155,6 +5300,14 @@ video {
 
   .xl\:top-\[8rem\] {
     top: 8rem;
+  }
+
+  .xl\:left-\[14\.2rem\] {
+    left: 14.2rem;
+  }
+
+  .xl\:m-\[-3rem_0_1rem_42rem\] {
+    margin: -3rem 0 1rem 42rem;
   }
 
   .xl\:m-\[0_0\.1rem_0\.5rem_0\] {
