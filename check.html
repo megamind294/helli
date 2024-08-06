@@ -80,63 +80,20 @@
       </div>
     </div>
   
-    <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:mt-[2rem]">
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="../assets/images/heli_br.png" class=" h-14 relative ml-[2rem] " alt="Flowbite Logo" />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
-        </a>
+    <nav class="bg-transparent  w-full border-gray-200 dark:bg-gray-900 dark:border-gray-700 z-20">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:mt-[0rem] bg-transparent">
+    
         <button data-collapse-toggle="navbar-multi-level" type="button" class=" relative right-5 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
             </svg>
         </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
-          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <div class="hidden w-full md:block md:w-auto flex bg-transparent" id="navbar-multi-level">
+          <ul class=" bg-transparent flex flex-col font-medium p-4 md:p-0 mt-0 ml-[14rem] border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="helli.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+              <a href="home.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
             </li>
-            <!-- <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Dropdown <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-      </svg></button>
-                
-                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                      </li>
-                      <li aria-labelledby="dropdownNavbarLink">
-                        <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-      </svg></button>
-                        <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
-                              </li>
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My downloads</a>
-                              </li>
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
-                              </li>
-                              <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Rewards</a>
-                              </li>
-                            </ul>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                      </li>
-                    </ul>
-                    <div class="py-1">
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
-                    </div>
-                </div>
-            </li> -->
             <li>
               <a href="about.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
             </li>
@@ -146,6 +103,12 @@
             <li>
               <a href="arrival.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Shop</a>
             </li>
+          <li><a href="#" class="flex items-center space-x-3 rtl:space-x-reverse ">
+            <img src="../assets/images/heli_br.png" class=" h-14 relative ml-[2rem] " alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+        </a></li>
+          
+          
             <li>
               <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blogs</a>
             </li>
@@ -163,7 +126,7 @@
       </div>
     </nav>
     <section>
-      <div class="font-inter md:max-w-4xl max-md:max-w-xl mx-auto bg-white py-4">
+      <div class="font-inter relative md:max-w-4xl max-md:max-w-xl mx-auto bg-white py-4 lg:left-[-2.5rem] xl:left-[1.4rem]">
         <div class="grid md:grid-cols-3 gap-4">
             <div class="md:col-span-2 bg-gray-100 p-4 rounded-md">
                 <h2 class="text-2xl font-bold text-gray-800">Cart</h2>
@@ -358,7 +321,7 @@
     </div>
     </section>
     <section>
-      <div class="flex  items-center justify-center bg-transparent relative xl:top-[0rem] xl:left-[2rem] left-[0rem] top-[2rem] ">
+      <div class="flex  items-center justify-center bg-transparent relative xl:top-[0rem] xl:left-[2rem] left-[0rem] top-[2rem] lg:left-[-2.5rem]">
         <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 relative ">
           <div class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
             <div class="h-96 w-72">
@@ -398,97 +361,97 @@
       </div>
       <button
             type="button"
-            class=" xl:top-[3rem] relative xl:left-[47.5rem] text-black top-[3rem] left-[7.5rem] border-gray-900 hover:text-white border border-\[3rem_solid_\#000\] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-semibold text-sm md:text-md px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 md:left-[30rem] md:top-[-12rem]"
+            class=" xl:top-[3rem] relative xl:left-[47.5rem] text-black top-[3rem] left-[7.5rem] lg:top-[5rem] lg:left-[26rem] border-gray-900 hover:text-white border border-\[3rem_solid_\#000\] hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-semibold text-sm md:text-md px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 md:left-[30rem] md:top-[-12rem]"
           >
             Load More
        </button>
     </section>
-    <section class="top-[12rem]  mb-[1rem] relative">
+    <section class="top-[12rem]  mb-[1rem] relative lg:top-[16rem] ">
 
+      <div
+        class="xl:flex justify-center relative flex-row gap-[0_1.4rem] w-full xl:left-[0rem] box-sizing-border left-[0rem] pb-4 block md:flex md:left-[1rem] lg:w-[95%] lg:left-[1rem] md:w-[100%] md:left-[7rem]">
         <div
-          class="xl:flex justify-center flex-row gap-[0_1.4rem] w-full xl:left-[0rem] box-sizing-border left-[0rem] pb-4 block md:flex md:left-[1rem]">
-          <div
-            class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh] w-[100%] md:p-[3rem_3rem_3rem_3rem]">
-            <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[40%] md:left-[1rem] md:w-[80%] left-[4rem] ">
-              <img src="../assets/images/package_1.png" class="xl:w-[100%] relative w-[100%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%] ">
-            </div>
-            <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[7.5rem] left-[4rem] top-[-1rem] md:left-[2.5rem]">FAST</span><br/>
-            <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[0.5rem]  left-[.5rem] top-[-1rem] w-full md:left-[2rem] text-[1.5rem]">GLOBAL SHIPPING</span>
-              
+          class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh]  w-[100%] md:p-[3rem_3rem_3rem_3rem]">
+          <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[30%] md:left-[1rem] md:w-[80%] left-[4rem]">
+            <img src="../assets/images/package_1.png" class="xl:w-[100%] relative w-[90%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%]">
           </div>
-          <div
-            class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh]  w-[100%] md:p-[3rem_3rem_3rem_3rem]">
-            <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[40%] md:left-[1rem] md:w-[80%] left-[4rem]">
-              <img src="../assets/images/package_12.png" class="xl:w-[100%] relative w-[100%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%]">
-            </div>
-            <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[5.5rem] left-[3rem] top-[-1rem] md:left-[1.5rem]">30 DAYS</span><br/>
-            <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[1.5rem] left-[1.2rem] top-[-1rem] w-full md:left-[1.6rem] text-[1.5rem]">RETURN POLICY</span>
-              
-          </div>
-          <div
-            class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh] w-[100%] md:p-[3rem_3rem_3rem_3rem]">
-            <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[40%] md:left-[1rem] md:w-[80%] left-[4rem]">
-              <img src="../assets/images/package_11.png" class="xl:w-[100%] relative w-[100%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%]">
-            </div>
-            <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[7.5rem] left-[4.5rem] top-[-1rem] md:left-[2.5rem]">100%</span><br/>
-            <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[0.5rem] left-[.5rem] top-[-1rem] w-full md:left-[2rem] text-[1.4rem]">SECURE PAYMENTS</span>
-              
-          </div>
+          <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[5.5rem] left-[4rem] top-[-1rem] md:left-[1.5rem] lg:left-[3.5rem]">FAST</span><br/>
+          <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[1.5rem] left-[1rem] top-[-1rem] w-full md:left-[1.6rem] text-[1.5rem] lg:left-[0.5rem]">GLOBAL SHIPPING</span>
+            
         </div>
-      </section>
-      <section>
-        <div class="xl:flex justify-center flex-row gap-[0_1.4rem] w-full box-sizing-border relative top-[12rem] border-t-2 border-gray-200 pb-4 block">
-            <div class="xl:left-[-5rem] relative top-[7rem] left-[5rem] " >
-              <ul class="list-none gap-[0_1.4rem] ">
-                <li class="font-semibold underline text-[#000] text-[1.8rem]">Company</li>
-                <li class="text-[1.2rem]">Contact Us</li>
-                <li class="text-[1.2rem]">Gift Card</li>
-                <li class="text-[1.2rem]">Blog</li>
-                <li class="text-[1.2rem]">Lookbook</li>
-                <li class="text-[1.2rem]">Sustainability</li>
-              </ul>
-            </div>
-            <div class="xl:left-[0rem] relative top-[7rem] left-[5rem]" >
-              <ul class="list-none gap-[0_1.4rem] ">
-                <li class="font-semibold underline text-[#000] text-[1.8rem]">Get Help</li>
-                <li class="text-[1.2rem]">FAQ</li>
-                <li class="text-[1.2rem]">Terms of Service</li>
-                <li class="text-[1.2rem]">Return Policy</li>
-                <li class="text-[1.2rem]">Shipping Info</li>
-              </ul>
-            </div>
-            <div class="xl:right-[1rem] relative top-[7rem] left-[5rem] " >
-              <ul class="list-none gap-[0_1.4rem] ">
-                <li class="font-semibold underline text-[#000] text-[1.8rem]">Account</li>
-                <li class="text-[1.2rem]">Log in</li>
-                <li class="text-[1.2rem]">Sign Up</li>
-                <li class="text-[1.2rem]">Gift Card</li>
-              </ul>
-            </div>
-            <div class="relative xl:top-[7rem] xl:left-[15rem] font-normal font-['Satoshi'] xl:text-[1.8rem] xl:w-[40%] text-[1.4rem] w-[80%] left-[5rem] top-[8rem]">
-              <span>Sign up to receive 10% off your first order <br/>& exclusive product launches, and unique experiences.</span>
-              <form action="#" class=" flex relative xl:m-[1rem_5rem_0_0] border  border-gray-900 m-[2rem_8rem_0_0]">
-                <input type="text" placeholder="Enter Your Email" class=" xl:p-[1rem_5rem_1rem_1rem] p-[1rem_3rem_1rem_1rem] ">
-                <button class="bg-black text-[#fff] text-[1.5rem] xl:p-[1rem_3rem_1rem_3rem]  xl:right-[3.4rem] relative right-[10rem] p-[1rem_1rem_1rem_1rem] md:right-[-3rem]">Submit</button>
-               </form>
-               <div class="flex right-[4rem] relative top-[5rem] ">
-                      <div class="bg-transparent relative bottom-[2rem] left-[6rem] ">
-                        <img src="../assets/images/facebook_app_symbol_11.png" class="w-[42%] h-[82%]  border border-gray-900 rounded-full relative  ">
-                      </div>
-                      <div class="bg-transparent relative bottom-[2rem] left-[3rem] ">
-                        <img src="../assets/images/facebook_app_symbol_111.png" class="w-[42%] h-[82%]  border border-gray-900 rounded-full relative  ">
-                      </div>
-                      <div class="bg-transparent relative bottom-[2rem] left-[0] ">
-                        <img src="../assets/images/facebook_app_symbol_112.png" class="w-[42%] h-[82%]  border border-gray-900 rounded-full relative  ">
-                      </div>
-               </div>
-  
-            </div>
+        <div
+          class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh]  w-[100%] md:p-[3rem_3rem_3rem_3rem]">
+          <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[30%] md:left-[1rem] md:w-[80%] left-[4rem]">
+            <img src="../assets/images/package_12.png" class="xl:w-[100%] relative w-[80%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%]">
+          </div>
+          <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[5.5rem] left-[3rem] top-[-1rem] md:left-[1.5rem] lg:left-[3.5rem]">30 DAYS</span><br/>
+          <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[1.5rem] left-[1.2rem] top-[-1rem] w-full md:left-[1.6rem] text-[1.5rem]">RETURN POLICY</span>
+            
         </div>
-      </section>
-      <section>
-        <h1 class=" relative font-semibold xl:text-[34rem] font-['Satoshi'] xl:top-[8rem] left-[2rem] text-[8rem] top-[22rem] md:left-[10rem]">HELI</h1>
-        <p class="xl:w-full font-medium xl:text-[1.5rem] font-['Satoshi'] relative xl:bottom-[4rem] xl:left-[17rem] xl:top-[0rem]  top-[20rem] left-[3rem] text-[1rem] w-[80%]">&copy; Copyright <strong>2024</strong>HELI, All rights reserved. Designed By <STRong>AHAAN SOFTWARE CONSULTING</STRong> </p>
-      </section>
+        <div
+          class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh] w-[100%] md:p-[3rem_3rem_3rem_3rem]">
+          <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[30%] md:left-[1rem] md:w-[80%] left-[4rem]">
+            <img src="../assets/images/package_11.png" class="xl:w-[100%] relative w-[80%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%]">
+          </div>
+          <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[7.5rem] left-[4.5rem] top-[-1rem] md:left-[2.5rem] lg:left-[5rem]">100%</span><br/>
+          <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[0.5rem] left-[.5rem] top-[-1rem] w-full md:left-[2rem] text-[1.4rem] lg:left-[0.5rem]">SECURE PAYMENTS</span>
+            
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="xl:flex justify-center flex-row gap-[0_1.4rem] w-full box-sizing-border relative top-[12rem] border-t-2 border-gray-200 pb-4 block lg:top-[16rem] lg:flex lg:left-[-3rem] md:flex md:left-[0rem]">
+          <div class="xl:left-[-5rem] relative top-[7rem] left-[5rem] lg:left-[4rem]" >
+            <ul class="list-none gap-[0_1.7rem] ">
+              <li class="font-semibold underline text-[#000] text-[1.8rem] lg:text-[1.2rem] md:text-[1.2rem]">Company</li>
+              <li class="text-[1.2rem] lg:text-[1.1rem] md:text-[1.1rem]">Contact Us</li>
+              <li class="text-[1.2rem] lg:text-[1.1rem] md:text-[1.1rem]">Gift Card</li>
+              <li class="text-[1.2rem] lg:text-[1.1rem] md:text-[1.1rem]">Blog</li>
+              <li class="text-[1.2rem] lg:text-[1.1rem] md:text-[1.1rem]">Lookbook</li>
+              <li class="text-[1.2rem] lg:text-[1.1rem] md:text-[1.1rem]">Sustainability</li>
+            </ul>
+          </div>
+          <div class="xl:left-[0rem] relative top-[7rem] left-[5rem] lg:left-[5rem] md:left-[8rem]" >
+            <ul class="list-none gap-[0_1.4rem] ">
+              <li class="font-semibold underline text-[#000] text-[1.8rem] lg:text-[1.2rem] md:text-[1.2rem] md:w-[100%]">Get Help</li>
+              <li class="text-[1.2rem] lg:text-[1.1rem] md:text-[1.1rem]">FAQ</li>
+              <li class="text-[1.2rem] lg:text-[1.1rem] md:text-[1.1rem]">Terms of Service</li>
+              <li class="text-[1.2rem] lg:text-[1.1rem] md:text-[1.1rem]">Return Policy</li>
+              <li class="text-[1.2rem] lg:text-[1.1rem] md:text-[1.1rem]">Shipping Info</li>
+            </ul>
+          </div>
+          <div class="xl:right-[1rem] relative top-[7rem] left-[5rem] lg:left-[6rem] md:left-[8rem]" >
+            <ul class="list-none gap-[0_1.4rem] ">
+              <li class="font-semibold underline text-[#000] text-[1.8rem] lg:text-[1.2rem] md:text-[1.2rem]">Account</li>
+              <li class="text-[1.2rem] lg:text-[1.1rem] md:text-[1.1rem]">Log in</li>
+              <li class="text-[1.2rem] lg:text-[1.1rem] md:text-[1.1rem]">Sign Up</li>
+              <li class="text-[1.2rem] lg:text-[1.1rem] md:text-[1.1rem]">Gift Card</li>
+            </ul>
+          </div>
+          <div class="relative xl:top-[7rem] xl:left-[15rem] font-normal font-['Satoshi'] xl:text-[1.8rem] xl:w-[40%] text-[1.4rem] w-[80%] left-[5rem] top-[8rem] lg:w-[60%] lg:left-[7rem] md:w-[60%] md:left-[9rem]">
+            <span class="lg:w-[40%] md:w-[40%]">Sign up to receive 10% off your first order <br/>& exclusive product launches, and unique experiences.</span>
+            <form action="#" class=" flex relative xl:m-[1rem_5rem_0_0] border  border-gray-900 m-[2rem_8rem_0_0] lg:m-[2rem_21rem_0_0]">
+              <input type="text" placeholder="Enter Your Email" class=" xl:p-[1rem_5rem_1rem_1rem] p-[1rem_3rem_1rem_1rem] ">
+              <button class="bg-black text-[#fff] text-[1.5rem] xl:p-[1rem_3rem_1rem_3rem]  xl:right-[3.4rem] relative right-[10rem] p-[1.2rem_1rem_1.2rem_1rem] md:right-[-3rem] lg:right-[5rem] md:right-[5rem]">Submit</button>
+             </form>
+             <div class="flex right-[4rem] relative top-[5rem] ">
+                    <div class="bg-transparent relative bottom-[2rem] left-[4rem] ">
+                      <i class="fa-brands fa-facebook-f  text-[3rem] border border-gray-900 rounded-full relative p-[1rem_1rem_1rem_1rem]"></i> 
+                    </div>
+                    <div class="bg-transparent relative bottom-[2rem] left-[8rem] ">
+                      <i class="fa-brands fa-instagram  text-[3rem] border border-gray-900 rounded-full relative p-[1rem_1rem_1rem_1rem]"></i> 
+                    </div>
+                    <div class="bg-transparent relative bottom-[2rem] left-[12rem] ">
+                      <i class="fa-brands fa-x-twitter text-[3rem] border border-gray-900 rounded-full relative p-[1rem_1rem_1rem_1rem]"></i>
+                    </div>
+             </div>
+
+          </div>
+      </div>
+    </section>
+    <section>
+      <h1 class=" relative font-semibold xl:text-[34rem] font-['Satoshi'] left-[2rem] xl:top-[12rem] xl:left-[5rem]  text-[8rem] top-[22rem] md:left-[10rem] lg:top-[25rem] lg:text-[22rem] lg:left-[2.5rem] md:text-[22rem] md:left-[2.5rem]">HELI</h1>
+      <p class="xl:w-full font-medium xl:text-[1.5rem] font-['Satoshi'] relative xl:bottom-[4rem] xl:left-[17rem] xl:top-[0rem]  top-[20rem] left-[3rem] text-[1rem] w-[80%] lg:top-[23rem] lg:text-[1.4rem] lg:left-[7rem] md:text-[1.2rem] md:left-[7rem]">&copy; Copyright <strong>2024</strong>   HELI, All rights reserved. Designed By <STRong>AHAAN SOFTWARE CONSULTING</STRong> </p>
+    </section>
   </body>
   </html>

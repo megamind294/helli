@@ -1,11 +1,11 @@
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
-const carousel = document.querySelector(".carousel-container");
+const car = document.querySelector(".carousel-cont");
 const track = document.querySelector(".track");
-let width = carousel.offsetWidth;
+let width = car.offsetWidth;
 let index = 0;
 window.addEventListener("resize", function () {
-  width = carousel.offsetWidth;
+  width = car.offsetWidth;
 });
 next.addEventListener("click", function (e) {
   e.preventDefault();
