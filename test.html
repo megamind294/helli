@@ -16,6 +16,41 @@
      <script src="https://cdn.tailwindcss.com"></script>
     
     <title>HELI E-commerce Website- Home page</title>
+    <link
+			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<style>
+			/* Custom CSS to hide elements based on screen size */
+			.desktop-nav {
+				display: none;
+			}
+			@media (min-width: 786px) {
+				.desktop-nav {
+					display: flex;
+				}
+				.mobile-nav {
+					display: none;
+				}
+			}
+
+	/* Carousel Styles */
+	.carousel-slide {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: opacity 1s ease-in-out;
+	}
+	#carousel {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+	/* Ensuring the video fills the carousel area */
+	video {
+		object-fit: cover;
+	}
+</style>
   </head>
   <body class="xl:top-[0rem]  relative top-[-5rem]" >
     
@@ -85,50 +120,220 @@
 
     
 
-<nav class="bg-[url('../assets/images/c2.png')] bg-[0%_30%] bg-cover bg-no-repeat h-[40rem]  w-full border-gray-200 dark:bg-gray-900 dark:border-gray-700 z-20">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:mt-[0rem] bg-transparent">
-
-    <button data-collapse-toggle="navbar-multi-level" type="button" class=" relative right-5 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-        </svg>
-    </button>
-    <div class="hidden w-full md:block md:w-auto flex bg-transparent" id="navbar-multi-level">
-      <ul class=" bg-transparent flex flex-col font-medium p-4 md:p-0 mt-0 ml-[14rem] border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="home.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="about.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-        </li>
-        <li>
-          <a href="collections.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">New Collections</a>
-        </li>
-        <li>
-          <a href="arrival.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Shop</a>
-        </li>
-      <li><a href="#" class="flex items-center space-x-3 rtl:space-x-reverse ">
-        <img src="../assets/images/heli_br.png" class=" h-14 relative ml-[2rem] " alt="Flowbite Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
-    </a></li>
-      
-      
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blogs</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Lookbooks</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ethics</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Account</a>
-        </li>
-      </ul>
+    <nav
+    class="relative bg-cover bg-no-repeat h-[40rem] w-auto border-gray-200 dark:bg-gray-900 dark:border-gray-700 z-20"
+>
+    <!-- Carousel Container -->
+    <div class="absolute inset-0 overflow-hidden">
+        <div id="carousel" class="h-full w-full">
+            <div
+                class="carousel-slide h-full w-full bg-cover bg-center"
+                style="background-image: url('../assets/images/c2.png')"
+            ></div>
+            <div
+                class="carousel-slide h-full w-full bg-cover bg-center"
+                style="background-image: url('../assets/images/c3.png')"
+            ></div>
+            <div
+                class="carousel-slide h-full w-full bg-cover bg-center"
+                style="background-image: url('../assets/images/c1.png')"
+            ></div>
+            <div class="carousel-slide h-full w-full bg-cover bg-center">
+                <video autoplay muted loop class="w-full h-full object-cover">
+                    <source src="../assets/videos/video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
     </div>
-  </div>
+
+    <!-- Mobile Navbar -->
+    <div
+        class="mobile-nav max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 bg-transparent"
+    >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+                src="../assets/images/heli_br.png"
+                class="h-14 relative ml-[2rem]"
+                alt="Flowbite Logo"
+            />
+        </a>
+        <button
+            data-collapse-toggle="navbar-mobile"
+            type="button"
+            class="relative right-5 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-mobile"
+            aria-expanded="false"
+        >
+            <span class="sr-only">Open main menu</span>
+            <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+            >
+                <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15"
+                />
+            </svg>
+        </button>
+        <div
+            class="hidden w-full md:block md:w-auto flex bg-transparent justify-end"
+            id="navbar-mobile"
+        >
+            <ul
+                class="bg-transparent flex flex-col font-medium p-4 md:p-0 mt-0 ml-[14rem] border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+                <li>
+                    <a
+                        href="helli.html"
+                        class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                        aria-current="page"
+                        >Home</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="about.html"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        >About</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="collections.html"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        >New Collections</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="arrival.html"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        >Shop</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        >Blogs</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        >Lookbooks</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        >Ethics</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                        >Account</a
+                    >
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Desktop Navbar -->
+    <div
+        class="desktop-nav bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+    >
+        <div
+            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 md:mt-[2rem]"
+        >
+            <div class="hidden w-full md:block md:w-auto" id="navbar-desktop">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+                >
+                    <li>
+                        <a
+                            href="helli.html"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                            aria-current="page"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="about.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                            >About</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="collections.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                            >New Collections</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="flex items-center space-x-3 rtl:space-x-reverse"
+                        >
+                            <img
+                                src="../assets/images/heli_br.png"
+                                class="h-14 relative left-[9rem]"
+                                alt="Flowbite Logo"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="arrival.html"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                            >Shop</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                            >Blogs</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                            >Lookbooks</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                            >Ethics</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                            >Account</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </nav>
 
    
@@ -486,10 +691,10 @@
         class="xl:flex justify-center relative flex-row gap-[0_1.4rem] top-[-5rem] w-full box-sizing-border pb-4 block md:left-[9.2rem] xl:left-[-3rem] xl:top-[0rem] lg:left-[5.5rem]"
       >
       <div
-       class="bg-black relative   box-sizing-border border-b xl:top-[7rem] xl:w-[35%]  left[-7rem] w-[100%] top-[3rem] lg:w-[70%] lg:left-[3.8rem]">
-       <span class="xl:text-[2.7rem] relative xl:left-[3rem] top-[1rem] left-[3rem]  m-[0_0.1rem_0_0] inline-block break-words font-['Airbone'] text-white font-light text-[2rem] md:left-[16rem] lg:left-[14rem]">OUR LOCATION </span>
+       class="bg-black relative   box-sizing-border xl:top-[7rem] xl:w-[35%]  left[-7rem] w-[100%] top-[3rem] lg:w-[70%] lg:left-[3.8rem]">
+       <span class="xl:text-[2.7rem] relative xl:left-[3rem] top-[1rem] left-[3rem]  m-[0_0.1rem_0_0] inline-block break-words font-['Airbone'] text-white font-light text-[2rem] md:left-[12rem]">OUR LOCATION </span>
        
-       <div class="bg-white relative  m-[2rem_0.1rem_0.2rem_0.15rem] p-[0_0_11rem_0rem] xl:p-[0_0_11rem_0] md:p-[0_0_11rem_10rem]  lg:p-[0_0_11rem_8rem]">
+       <div class="bg-white m-[2rem_0.1rem_0.2rem_0.15rem] p-[0_0_11rem_0rem] xl:p-[0_0_11rem_0] md:p-[0_0_11rem_5rem]">
         <span class=" xl:left-[2rem] top-[2rem] relative m-[5rem_0_0_1rem] text-[1.5rem] xl:w-full font-medium font-['Satoshi'] text-black left-[0rem] w-[60%]">Swastika Textiles, Kolkata,    West Bengal.</span><br/>
         <span class="xl:left-[2rem] top-[2rem] relative m-[5rem_0_0_1rem] text-[1.1rem] justify-center xl:w-[20rem] font-medium font-['Satoshi'] text-black  left-[0rem] w-[5rem]">Address: Swastika Textiles , 69 Dr. Sudhir Bose road,</span><br/>
         <span class="xl:left-[2rem] top-[2rem] relative m-[5rem_0_0_1rem] text-[1.1rem] justify-center w-[20rem] font-medium font-['Satoshi'] text-black left-[0rem]">Jamal Pada, Kolkata 700023. West Bengal, India.</span>
@@ -525,7 +730,7 @@
         <div
           class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh]  w-[100%] md:p-[3rem_3rem_3rem_3rem]">
           <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[30%] md:left-[1rem] md:w-[80%] left-[4rem] lg:w-[80%]">
-            <img src="../assets/images/package_1.png" class="xl:w-[100%] relative w-[90%]  invert p-[2rem_2rem_2rem_2rem] md:w-[100%] lg:w-[100%]">
+            <img src="../assets/images/package_1.png" class="xl:w-[100%] relative w-[90%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%] lg:w-[100%]">
           </div>
           <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[5.5rem] left-[4rem] top-[-1rem] md:left-[1.5rem] lg:left-[3.5rem]">FAST</span><br/>
           <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[1.5rem] left-[1rem] top-[-1rem] w-full md:left-[1.6rem] text-[1.5rem] lg:left-[0.5rem]">GLOBAL SHIPPING</span>
@@ -534,7 +739,7 @@
         <div
           class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh]  w-[100%] md:p-[3rem_3rem_3rem_3rem]">
           <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[30%] md:left-[1rem] md:w-[80%] left-[4rem] lg:w-[80%]">
-            <img src="../assets/images/package_12.png" class="xl:w-[100%] relative w-[80%]  invert p-[2rem_2rem_2rem_2rem] md:w-[100%] lg:w-[100%]">
+            <img src="../assets/images/package_12.png" class="xl:w-[100%] relative w-[80%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%] lg:w-[100%]">
           </div>
           <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[5.5rem] left-[3rem] top-[-1rem] md:left-[1.5rem] lg:left-[3.5rem]">30 DAYS</span><br/>
           <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[1.5rem] left-[1.2rem] top-[-1rem] w-full md:left-[1.6rem] text-[1.5rem]">RETURN POLICY</span>
@@ -543,7 +748,7 @@
         <div
           class="bg-transparent relative p-[5rem_5rem_5rem_5rem] border border-[1px solid #000] box-sizing-border xl:w-[30%] h-[40vh] w-[100%] md:p-[3rem_3rem_3rem_3rem]">
           <div class="bg-black relative bottom-[2rem] xl:left-[6rem] xl:w-[40%] rounded-full w-[30%] md:left-[1rem] md:w-[80%] left-[4rem] lg:w-[80%]">
-            <img src="../assets/images/package_11.png" class="xl:w-[100%] relative w-[80%]  invert p-[2rem_2rem_2rem_2rem] md:w-[100%] lg:w-[100%]">
+            <img src="../assets/images/package_11.png" class="xl:w-[100%] relative w-[80%]  invert p-[1rem_1rem_1rem_1rem] md:w-[100%] lg:w-[100%]">
           </div>
           <span class="text-[2rem] font-medium font-['Satoshi'] relative xl:left-[7.5rem] left-[4.5rem] top-[-1rem] md:left-[2.5rem] lg:left-[5rem]">100%</span><br/>
           <span class="xl:text-[2rem] font-medium font-['Satoshi'] relative xl:left-[0.5rem] left-[.5rem] top-[-1rem] w-full md:left-[2rem] text-[1.4rem] lg:left-[0.5rem]">SECURE PAYMENTS</span>
@@ -603,9 +808,45 @@
     </section>
     <section>
       <h1 class=" relative font-semibold xl:text-[34rem] font-['Satoshi'] left-[2rem] xl:top-[14rem] xl:left-[5rem]  text-[8rem] top-[22rem] md:left-[10rem] lg:top-[25rem] lg:text-[22rem] lg:left-[2.5rem] md:text-[22rem] md:left-[4.5rem]">HELI</h1>
-      <p class="xl:w-full font-medium xl:text-[1.5rem] font-['Satoshi'] relative xl:bottom-[4rem] xl:left-[17rem] xl:top-[0rem]  top-[20rem] left-[3rem] text-[1rem] w-[80%] lg:top-[23rem] lg:text-[1.2rem] lg:left-[7rem] md:text-[1.2rem] md:left-[7rem] xl:top-[2rem] md:w-full ">&copy; Copyright <strong>2024</strong>   HELI, All rights reserved. Designed By <STRong>AHAAN SOFTWARE CONSULTING</STRong> </p>
+      <p class="xl:w-full font-medium xl:text-[1.5rem] font-['Satoshi'] relative xl:bottom-[4rem] xl:left-[17rem] xl:top-[0rem]  top-[20rem] left-[3rem] text-[1rem] w-[80%] lg:top-[23rem] lg:text-[1.2rem] lg:left-[7rem] md:text-[1.2rem] md:left-[7rem] xl:top-[2rem] md:w-full">&copy; Copyright <strong>2024</strong>   HELI, All rights reserved. Designed By <STRong>AHAAN SOFTWARE CONSULTING</STRong> </p>
     </section>
-    
+    <script>
+        // JavaScript for toggling mobile menu
+        document.addEventListener("DOMContentLoaded", function () {
+            const mobileMenuButton = document.querySelector(
+                '[data-collapse-toggle="navbar-mobile"]'
+            );
+            const mobileMenu = document.getElementById("navbar-mobile");
+
+            mobileMenuButton.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+            });
+        });
+    </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll('.carousel-slide');
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    const intervalTime = 5000; // 5 seconds
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.opacity = i === index ? '1' : '0';
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, intervalTime);
+    showSlide(currentIndex); // Initial call to show the first slide
+});
+</script>
+
     <script src="./script.js"></script>
   </body>
 </html>
