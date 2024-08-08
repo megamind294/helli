@@ -15,7 +15,10 @@
   font-weight: normal;
   font-style: normal;
 }
-
+body{
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+}
 .close-menu,
 .open-menu {
   position: absolute;
@@ -135,11 +138,11 @@ img {
   }
   .carousel-container {
     width: 80%;
-    margin-left: 7.5rem;
+    margin-left: 5.5rem;
   }
   .carousel-cont {
     width: 800px;
-    margin-left: 5.5rem;
+    margin-left:5.5rem;
   }
   
   
@@ -147,16 +150,19 @@ img {
 @media (max-width: 768px) {
   
   body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     overflow-x: hidden;
     align-items: center;
   justify-content: center;
   }
   .carousel-container {
-    width: 800px;
-    margin-left: 8rem;
+    width: 550px;
+    margin-left: 7.5rem;
   }
   .carousel-cont {
-    width: 800px;
+    width: 550px;
     margin-left: 7.5rem;
   }
   .card-container {
