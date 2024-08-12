@@ -175,6 +175,42 @@ img {
     right: 10px;
   }
 }
+@media (max-width: 425px) {
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    align-items: center;
+  justify-content: center;
+  }
+  .carousel-container {
+    width: 250px;
+    margin-left: 5.5rem;
+  }
+  .carousel-cont {
+    width: 250px;
+    margin-left: 5.5rem;
+  }
+  .card-container {
+    width: 275px;
+  }
+  .arrow .prev {
+    left: 20px;
+  }
+  .arrow .next {
+    right: 10px;
+  }
+  .inner-carousel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  .track {
+    display: inline-flex;
+    
+  }
+}
 .inner-carousel {
   width: 100%;
   height: 400px;
@@ -265,7 +301,7 @@ img {
 
 
 .faq {
-  background-color: #F5F5F5;
+  background-color: #F2F3F5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,10 +318,10 @@ h1 {
 }
 
 .container {
-  background-color: white;
+  background-color: transparent;
   color: black;
-  border-radius: 20px;
-  box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+  border-bottom: 1px solid black;
+  box-shadow: none;
   margin: 20px 0;
 }
 
