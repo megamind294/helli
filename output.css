@@ -667,8 +667,8 @@ video {
   bottom: 1.25rem;
 }
 
-.bottom-\[-8rem\] {
-  bottom: -8rem;
+.bottom-\[-13rem\] {
+  bottom: -13rem;
 }
 
 .bottom-\[15rem\] {
@@ -719,8 +719,8 @@ video {
   left: -12rem;
 }
 
-.left-\[-17rem\] {
-  left: -17rem;
+.left-\[-16rem\] {
+  left: -16rem;
 }
 
 .left-\[-1rem\] {
@@ -859,10 +859,6 @@ video {
   left: 6rem;
 }
 
-.left-\[7\.5rem\] {
-  left: 7.5rem;
-}
-
 .left-\[7rem\] {
   left: 7rem;
 }
@@ -997,6 +993,10 @@ video {
 
 .top-\[12rem\] {
   top: 12rem;
+}
+
+.top-\[13rem\] {
+  top: 13rem;
 }
 
 .top-\[1rem\] {
@@ -3053,12 +3053,20 @@ video {
   background-position: 30% 10%;
 }
 
+.bg-\[30\%_30\%\] {
+  background-position: 30% 30%;
+}
+
 .bg-\[40\%_10\%\] {
   background-position: 40% 10%;
 }
 
 .bg-\[50\%_10\%\] {
   background-position: 50% 10%;
+}
+
+.bg-\[50\%_30\%\] {
+  background-position: 50% 30%;
 }
 
 .bg-\[50\%_50\%\] {
