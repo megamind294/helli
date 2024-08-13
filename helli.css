@@ -485,5 +485,10 @@ h1 {
  .heli{
    margin-left: 4rem;
  }
- 
+ .ship img{
+  margin-left: 1.5rem;
+ }
+ .globe{
+  margin-left: 1.5rem;
+ }
 }
