@@ -386,7 +386,6 @@ img {
   @media (max-width: 425px){
     #section ul {
       margin-top: 1rem;
-      
       width: 65%;
       scroll-behavior: smooth;
       display: inline-block;
@@ -475,4 +474,16 @@ h1 {
   .wrapper {
   width: 80%;
 }
+}
+@media (min-width: 1920px){
+  .form{
+    margin-left: 0rem;
+  }
+ .submit{
+  margin-left: 8.1rem;
+ }
+ .heli{
+   margin-left: 4rem;
+ }
+ 
 }
